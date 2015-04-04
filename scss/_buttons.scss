@@ -1,4 +1,4 @@
-.button{
+.button, button{
     @extend .stable;
 	border: none;
 	padding: 10px 14px;
@@ -104,7 +104,7 @@
     padding: 20px 28px;
 }
 
-.button-primary{
+.button-primary, input[type="submit"]{
     @extend .button-positive;
 }
 
@@ -114,4 +114,19 @@
 
 .button-error{
     @extend .button-red;
+}
+
+.button-clean{
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+    color: inherit;
+    &:focus{
+        outline: 0;
+        background-color: inherit;
+    }
+    &:hover{
+        background-color: inherit;
+    }
 }

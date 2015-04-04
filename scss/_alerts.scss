@@ -3,16 +3,20 @@
     border: 1px solid;
     border-radius: 3px;
     margin: 10px 0 10px 0;
-    padding-left: 10px;
-    font-weight: bold;
+    padding: 10px;
     color: white;
     .alert-close{
         padding: 0 5px 0 5px;
-        border-left: 1px solid;
         float: right;
         &:hover{
             cursor: pointer;
         }
+        button{
+            @extend .button-clean;
+        }
+    }
+    .info:before{
+        font-weight: bold;
     }
 }
 
@@ -21,7 +25,10 @@
     @extend .calm;
     border-color: darken($calm, 10%);
     .alert-close:hover{
-        background-color: darken($calm, 10%);
+        color: darken($calm, 10%);
+    }
+    .info:before{
+        content: "Info: ";
     }
 }
 
@@ -30,20 +37,38 @@
     @extend .positive;
     border-color: darken($positive, 10%);
     .alert-close:hover{
-        background-color: darken($positive, 10%);
+        color: darken($positive, 10%);
+    }
+    .info:before{
+        content: "Sucesso: ";
+    }
+}
+
+.warning{
+    @extend .alert;
+    @extend .energized;
+    border-color: darken($energized, 10%);
+    .alert-close:hover{
+        color: darken($energized, 10%);
+    }
+    .info:before{
+        content: "Aviso: ";
     }
 }
 
 .error{
     @extend .alert;
-    @extend .energized;
-    border-color: darken($energized, 10%);
+    @extend .red;
+    border-color: darken($red, 10%);
     .alert-close:hover{
-        background-color: darken($energized, 10%);
+        color: darken($red, 10%);
+    }
+    .info:before{
+        content: "Erro: ";
     }
 }
 
-input.warning{
+input.warn{
     border-color: $energized;
     color: $dark;
     &::-webkit-input-placeholder { /* WebKit browsers */

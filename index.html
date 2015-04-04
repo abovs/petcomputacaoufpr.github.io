@@ -53,25 +53,33 @@
                 <h2>Menus e navegação</h2>
                 <div class="navbar">
                     <a href="#logo" class="brand">Pet Ui</a>
-                    <nav>
-                        <a href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
-                        <a href="http://pet.inf.ufpr.br/farol/">Farol</a>
+                    <nav class="nav-right">
+                        <a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
+                        <a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a>
                     </nav>
                 </div>
                 <br/>
                 <div class="navbar-positive">
                     <a href="#logo" class="brand">Pet Ui</a>
-                    <nav>
-                        <a href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
-                        <a href="http://pet.inf.ufpr.br/farol/">Farol</a>
+                    <nav class="nav-right">
+                        <a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
+                        <a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a>
                     </nav>
                 </div>
                 <br/>
                 <div class="navbar-energized">
                     <a href="#logo" class="brand">Pet Ui</a>
-                    <nav>
-                        <a href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
-                        <a href="http://pet.inf.ufpr.br/farol/">Farol</a>
+                    <nav class="nav-right">
+                        <a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
+                        <a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a>
+                    </nav>
+                </div>
+                <br/>
+                <div class="navbar-dark">
+                    <a href="#logo" class="brand">Pet Ui</a>
+                    <nav class="nav-right">
+                        <a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
+                        <a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a>
                     </nav>
                 </div>
                 <br/><br/>
@@ -93,7 +101,7 @@
                         <input type="email" name="email" id="email" placeholder="E-mail">
                         <br/>
                         <label for="warning">Senha:</label>
-                        <input type="password" name="warning" id="warning" class="warning" placeholder="Alerta!">
+                        <input type="password" name="warning" id="warning" class="warn" placeholder="Alerta!">
                         <br/>
                         <label for="disabled">Inativo:</label>
                         <input type="text" name="disabled" id="disabled" placeholder="Inativo" disabled>
@@ -127,16 +135,24 @@
             <section id="alerts">
                 <h2>Alertas</h2>
                 <div class="notice">
-                    Aviso: esta é uma mensagem padrão 
-                    <span class="alert-close"><i class="fa fa-close"></i></span>
+                    <i class="fa fa-info-circle fa-lg"></i>
+                    <span class="info">Esta é uma mensagem padrão</span>
+                    <span class="alert-close"><button><i class="fa fa-close fa-lg"></i></button></span>
                 </div>
                 <div class="success">
-                    Sucesso!
-                    <span class="alert-close"><i class="fa fa-close"></i></span>
+                    <i class="fa fa-check fa-lg"></i>
+                    <span class="info">Operação realizada!</span>
+                    <span class="alert-close"><button><i class="fa fa-close fa-lg"></i></button></span>
+                </div>
+                <div class="warning">
+                    <i class="fa fa-exclamation-triangle fa-lg"></i>
+                    <span class="info">Você não tem privilégios para fazer isso.</span>
+                    <span class="alert-close"><button><i class="fa fa-close fa-lg"></i></button></span>
                 </div>
                 <div class="error">
-                    Ops! Algo deu errado :(
-                    <span class="alert-close"><i class="fa fa-close"></i></span>
+                    <i class="fa fa-ban fa-lg"></i>
+                    <span class="info">Ops! Algo deu errado :(</span>
+                    <span class="alert-close"><button><i class="fa fa-close fa-lg"></i></button></span>
                 </div>
             </section>
             <section id="post">
