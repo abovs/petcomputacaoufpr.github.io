@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PET UI Kit</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1 class="logo center-text" id="logo">PET UI</h1>
+            <div class="navbar">
+                <nav>
+                    <a href="#buttons">Botões</a>
+                    <a href="#menus">Menus e navegação</a>
+                    <a href="#inputs">Inputs e Formulários</a>
+                    <a href="#headers">Cabeçalhos</a>
+                    <a href="#alerts">Alertas</a>
+                    <a href="#post">Blog Post</a>
+                </nav>
+            </div>
+        </header>
+        <section class="content">
+            <h1>Elementos Básicos</h1>
+            <section id="buttons">
+                <h2>Botões</h2>
+                <button class="button button-small">Botão Simples</button>
+                <button class="button-positive button-small">Botão Positivo</button>
+                <button class="button-calm button-small">Botão Calmo</button>
+                <button class="button-energized button-small">Botão Energizado</button>
+                <button class="button-red button-small">BotãERROR</button>
+                <button class="button-dark button-small">Botão Escuro</button>
+                <br/>
+                <button class="button">Botão Simples</button>
+                <button class="button-positive">Botão Positivo</button>
+                <button class="button-calm">Botão Calmo</button>
+                <button class="button-energized">Botão Energizado</button>
+                <button class="button-red">BotãERROR</button>
+                <button class="button-dark">Botão Escuro</button>
+                <br/>
+                <button class="button button-large">Botão Simples</button>
+                <button class="button-positive button-large">Botão Positivo</button>
+                <button class="button-calm button-large">Botão Calmo</button>
+                <button class="button-energized button-large">Botão Energizado</button>
+                <button class="button-red button-large">BotãERROR</button>
+                <button class="button-dark button-large">Botão Escuro</button>
+                <br/>
+                <button class="button-facebook"><i class="fa fa-facebook fa-2x"></i></button>
+                <button class="button-dark button-icon"><i class="fa fa-github fa-2x"></i></button>
+                <button class="button-energized button-icon"><i class="fa fa-git fa-2x"></i></button>
+            </section>
+            <section id="menus">
+                <h2>Menus e navegação</h2>
+                <div class="navbar">
+                    <a href="#logo" class="brand">Pet Ui</a>
+                    <nav>
+                        <a href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
+                        <a href="http://pet.inf.ufpr.br/farol/">Farol</a>
+                    </nav>
+                </div>
+                <br/>
+                <div class="navbar-positive">
+                    <a href="#logo" class="brand">Pet Ui</a>
+                    <nav>
+                        <a href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
+                        <a href="http://pet.inf.ufpr.br/farol/">Farol</a>
+                    </nav>
+                </div>
+                <br/>
+                <div class="navbar-energized">
+                    <a href="#logo" class="brand">Pet Ui</a>
+                    <nav>
+                        <a href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
+                        <a href="http://pet.inf.ufpr.br/farol/">Farol</a>
+                    </nav>
+                </div>
+                <br/><br/>
+                <select>
+                    <option>Elemento 1</option>
+                    <option>Elemento 2</option>
+                    <option>Elemento 3</option>
+                </select>
+                <br/><br/>
+                <p>Links: <a href="//gitlab.c3sl.ufpr.br/groups/pet" target="_blank">Gitlab</a> <a href="//github.com" target="_blank">Github</a></p>
+            </section>
+            <section id="inputs">
+                <h2>Inputs e formulários</h2>
+                <form>
+                    <fieldset>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <br/>
+                        <label for="warning">Senha:</label>
+                        <input type="password" name="warning" id="warning" class="warning" placeholder="Alerta!">
+                        <br/>
+                        <label for="disabled">Inativo:</label>
+                        <input type="text" name="disabled" id="disabled" placeholder="Inativo" disabled>
+                        <br/>
+                        <label for="checked">Checked:</label>
+                        <input type="checkbox" name="check" id="checked" checked>
+                        <label for="unchecked">Unchecked:</label>
+                        <input type="checkbox" name="check" id="unchecked">
+                        <br/>
+                        <label for="sim">Sim:</label>
+                        <input type="radio" name="radio" id="sim" checked/>
+                        <label for="nao">Não:</label>
+                        <input type="radio" name="radio" id="nao"/>
+                        <br/>
+                        <label for="textarea">Texto:</label>
+                        <textarea id="textarea"></textarea>
+                        <br/>
+                        <input type="submit" value="Enviar" class="button-primary">
+                    </fieldset>
+                </form>
+            </section>
+            <section id="headers">
+                <h2>Cabeçalhos</h2>
+                <h1>Header 1</h1>
+                <h2>Header 2</h2>
+                <h3>Header 3</h3>
+                <h4>Header 4</h4>
+                <h5>Header 5</h5>
+                <h6>Header 6</h6>
+            </section>
+            <section id="alerts">
+                <h2>Alertas</h2>
+                <div class="notice">
+                    Aviso: esta é uma mensagem padrão 
+                    <span class="alert-close"><i class="fa fa-close"></i></span>
+                </div>
+                <div class="success">
+                    Sucesso!
+                    <span class="alert-close"><i class="fa fa-close"></i></span>
+                </div>
+                <div class="error">
+                    Ops! Algo deu errado :(
+                    <span class="alert-close"><i class="fa fa-close"></i></span>
+                </div>
+            </section>
+            <section id="post">
+                <h2>Blog Post</h2>
+                <article class="post">
+                    <img class="post-image" src="http://placehold.it/960x250/efefef">
+                    <h1 class="post-title">Título</h1>
+                    <div class="post-content">
+                        <span class="post-time">Postado 03/04/2015, às 15h34</span>
+                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis 
+                        adipiscings elitis. Pra lá , depois divoltis porris, 
+                        paradis. Paisis, filhis, espiritis santis. Mé faiz 
+                        elementum girarzis, nisi eros vermeio, in elementis mé 
+                        pra quem é amistosis quis leo. Manduma pindureta quium 
+                        dia nois paga. Sapien in monti palavris qui num significa 
+                        nadis i pareci latim. Interessantiss quisso pudia ce 
+                        receita de bolis, mais bolis eu num gostis.</p>
+                        <a href="">Leia mais...</a>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <footer class="center-text padding-vertical">
+            <p><a href="http://pet.inf.ufpr.br">PET Computação UFPR</a> <br/> &copy 2015</p>
+        </footer>
+    </body>
+</html>

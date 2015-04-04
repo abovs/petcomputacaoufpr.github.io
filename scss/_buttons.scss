@@ -1,0 +1,117 @@
+.button{
+    @extend .stable;
+	border: none;
+	padding: 10px 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+	font-weight: 100;
+	@include transition(background-color, 0.2s, ease);
+	&:hover{
+		cursor: pointer;
+		background-color: lighten($stable, 10%);
+	}
+	&:active{
+        background-color: darken($stable, 10%);
+    }
+    &:focus{
+        outline: 0;
+    }
+}
+
+.button-positive{
+    @extend .button;
+    @extend .positive;
+    color: white;
+    &:hover{
+		background-color: lighten($positive, 10%);
+	}
+	&:active{
+        background-color: darken($positive, 10%);
+    }
+}
+
+.button-calm{
+    @extend .button;
+    @extend .calm;
+    color: white;
+    &:hover{
+		background-color: lighten($calm, 10%);
+	}
+	&:active{
+        background-color: darken($calm, 10%);
+    }
+}
+
+.button-energized{
+    @extend .button;
+    @extend .energized;
+    color: white;
+    &:hover{
+		background-color: lighten($energized, 10%);
+	}
+	&:active{
+        background-color: darken($energized, 10%);
+    }
+}
+
+.button-red{
+    @extend .button;
+    @extend .red;
+    color: white;
+    &:hover{
+		background-color: lighten($red, 10%);
+	}
+	&:active{
+        background-color: darken($red, 10%);
+    }
+}
+
+.button-dark{
+    @extend .button;
+    @extend .dark;
+    color: white;
+    &:hover{
+		background-color: lighten($dark, 10%);
+	}
+	&:active{
+        background-color: darken($dark, 10%);
+    }
+}
+
+.button-facebook{
+    @extend .button;
+    background-color: #344e86;
+    color: white;
+    &:hover{
+		background-color: white;
+		color: #344e86;
+	}
+	&:active{
+        background-color: darken(#344e86, 10%);
+        color: white;
+    }
+}
+
+.button-small{
+    font-size: 80%;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.button-large{
+    font-size: 110%;
+    padding: 20px 28px;
+}
+
+.button-primary{
+    @extend .button-positive;
+}
+
+.button-secondary{
+    @extend .button-calm;
+}
+
+.button-error{
+    @extend .button-red;
+}

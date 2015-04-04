@@ -1,0 +1,68 @@
+.navbar{
+    @extend .full;
+    padding: 15px;
+    @extend .stable;
+    nav, ul{
+        list-style-type: none;
+        margin: 0;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: $red;
+            padding: 15px;
+            &:hover{
+                background-color: $red;
+                color: white;
+            }
+            
+        }
+    }
+    
+    .brand{
+        color: $red;
+        position: relative;
+        float: left;
+        @extend .all-caps;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover{
+            color: white;
+        }
+    }
+    
+}
+
+.navbar-positive{
+    @extend .navbar;
+    @extend .positive;
+    nav, ul{
+        a{
+            color: white;
+            &:hover{
+                background-color: $calm;
+                color: $dark;
+            }
+        }
+    }
+    
+    .brand{
+        color: white;
+        &:hover{
+            color: $dark;
+        }
+    }
+}
+
+.navbar-energized{
+    @extend .navbar;
+    @extend .energized;
+}
+
+select{
+    border: 1px solid $stable;
+    padding: 5px;
+    border-radius: 3px;
+    &:focus{
+        outline:none;
+    }
+}

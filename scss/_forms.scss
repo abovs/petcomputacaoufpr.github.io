@@ -1,0 +1,99 @@
+$input-padding: 5px;
+$input-margin: 8px;
+
+input, .input{
+    margin: $input-margin 0 $input-margin 0;
+    &:focus{
+        outline: 0;
+    }
+    &:disabled{
+        background-color: $stable;
+        border-color: $dark;
+    }
+}
+
+//Class .input no fim, caso eu não tenha coberto algum tipo
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="search"], input[type="tel"], .input{
+    border-radius: 2px;
+    border: 1px solid $stable;
+    padding: $input-padding 0 $input-padding 0;
+    &:focus{
+        border-color: $positive;
+    }
+    &:disabled{
+        border-color: inherit;
+    }
+}
+
+input[type="checkbox"]{
+    visibility: hidden;
+    cursor: pointer;
+    margin-right: 8px;
+    &:before{
+        content: "";
+        display: inline-block;
+        margin-right: 15px;
+        width: 12px;
+        height: 12px;
+        visibility: visible;
+        border: 2px solid $stable;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        line-height: 12px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+    }
+    &:checked:before{
+        color: $positive;
+        font-family: FontAwesome;
+        //FontAwesome
+        content: "\f00c";
+        border-color: $positive;
+    }
+    &:hover:not(:checked):before{
+        color: $stable;
+        font-family: FontAwesome;
+        //FontAwesome
+        content: "\f00c";
+    }
+}
+
+input[type="radio"]{
+    visibility: hidden;
+    cursor: pointer;
+    margin-right: 8px;
+    &:before{
+        font-family: FontAwesome;
+        color: $stable;
+        content: "";
+        display: inline-block;
+        margin-right: 15px;
+        width: 11px;
+        height: 11px;
+        border: 2px solid $stable;
+        border-radius:50%;
+        visibility: visible;
+        line-height: 12px;
+        font-size: 14px;
+        text-align: center;
+    }
+    &:checked:before{
+        padding-left: -2px;
+        color: $positive;
+        background-color: $positive;
+    }
+    &:hover:not(:checked):before{
+        background-color: $stable;
+    }
+}
+
+textarea{
+    @extend .input;
+}
+
+fieldset{
+    border: 1px solid darken($stable, 20%);
+    border-radius: 3px;
+}

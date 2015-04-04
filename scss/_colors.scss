@@ -1,0 +1,36 @@
+$light: whitesmoke;
+$stable: #DCD6D8;
+$positive: #349B89;
+$calm: #99CDC4;
+//$balanced:
+$energized: #EC7149;
+$dark: #2D2F31;
+$red: #9b2929; //Cor retirada do antigo site
+
+.light{
+    background-color: $light;
+}
+
+.stable{
+    background-color: $stable;
+}
+
+.positive{
+    background-color: $positive;
+}
+
+.calm{
+    background-color: $calm;
+}
+
+.energized{
+    background-color: $energized;
+}
+
+.dark{
+    background-color: $dark;
+}
+
+.red{
+    background-color: $red;
+}

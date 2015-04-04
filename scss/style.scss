@@ -1,0 +1,72 @@
+//Fonts
+@import url(//fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
+//FontAwesome
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+//Imports
+@import "mixins";
+@import "positioning";
+@import "colors";
+@import "forms";
+@import "alerts";
+@import "buttons";
+@import "navigation";
+@import "blog";
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: $dark;
+    background: $light;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+   font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-size: 2em;
+}
+
+section{
+    padding-bottom: 20px;
+    border-bottom: 1px solid $stable;
+    margin-bottom: 20px;
+}
+
+a{
+    color: darken($calm, 20%);
+    &:hover{
+        color: darken($calm, 50%);
+    }
+}
+
+.all-caps{
+    text-transform: uppercase;
+}
+
+.logo{
+    @extend .all-caps;
+    color: $red;
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-size: 4.5em;
+}
+
+.content{
+    padding: 0 15% 0 15%;
+}
+
+footer{
+    background-color: $red;
+    color: white;
+    font-weight: 300;
+    font-size: .9em;
+    a{
+        color: lighten($energized, 15%);
+        &:hover{
+            color: $energized;
+        }
+    }
+}
