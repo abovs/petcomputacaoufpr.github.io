@@ -58,26 +58,48 @@ $margin: 20px;
     margin: auto;
 }
 
+.vertical-top{
+    vertical-align: top;
+}
+
+.vertical-center{
+    vertical-align: center;
+}
+
+.vertical-bottom{
+    vertical-align: bottom;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
 .full{
+    @extend .inline-block;
     width: 100%;
 }
 
 .half{
-    width: 50%;
+    @extend .inline-block;
+    width: 49%;
 }
 
 .one-third{
+    @extend .inline-block;
     width: 33%;
 }
 
 .two-thirds{
+    @extend .inline-block;
     width: 66%;
 }
 
 .one-quarter{
+    @extend .inline-block;
     width: 25%;
 }
 
 .three-quarters{
+    @extend .inline-block;
     width: 75%;
 }

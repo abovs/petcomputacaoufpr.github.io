@@ -45,11 +45,23 @@
   display: table;
   margin: auto; }
 
-.full, .alert, .notice, .success, .warning, .error, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav, .post .post-title {
+.vertical-top {
+  vertical-align: top; }
+
+.vertical-center {
+  vertical-align: center; }
+
+.vertical-bottom {
+  vertical-align: bottom; }
+
+.inline-block, .full, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav, .post .post-title, .half, .one-third, .two-thirds, .one-quarter, .three-quarters {
+  display: inline-block; }
+
+.full, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav, .post .post-title {
   width: 100%; }
 
 .half {
-  width: 50%; }
+  width: 49%; }
 
 .one-third {
   width: 33%; }
