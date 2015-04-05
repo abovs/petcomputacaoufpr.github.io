@@ -42,7 +42,7 @@
     
 }
 
-//Código pra fazer dropdown menu
+//Código pra fazer dropdowns
 .navbar, nav{
     ul li{
         ul{
@@ -67,8 +67,7 @@
                     height: 100%;
                 }
                 &:hover{
-                    background: $stable;
-                    color: $red;
+                    background: lighten($red, 10%);
                 }
                 &:hover > a{
                     z-index: 3;
@@ -101,8 +100,7 @@
                 color: $dark;
                 background: $calm;
                 li:hover{
-                    background: $positive;
-                    color: white;
+                    background: lighten($calm, 10%);
                 }
             }
         }
@@ -118,10 +116,6 @@
 .navbar-energized{
     @extend .navbar;
     @extend .energized;
-    ul li ul li:hover{
-        background: $energized;
-        color: $red;
-    }
 }
 
 .navbar-dark{
@@ -137,11 +131,10 @@
                 color: $dark;
             }
             ul{
-                background: $dark;
-                color: white;
+                background: $positive;
+                color: $dark;
                 li:hover{
-                    background: $positive;
-                    color: $dark;
+                    background: lighten($positive, 10%);
                 }
             }
         }
