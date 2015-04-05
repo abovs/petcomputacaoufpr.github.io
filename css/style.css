@@ -43,7 +43,7 @@
 
 .center-block {
   display: table;
-  margin: auto; }
+  margin: 0 auto; }
 
 .vertical-top {
   vertical-align: top; }
@@ -145,7 +145,7 @@ input[type="checkbox"] {
     width: 12px;
     height: 12px;
     visibility: visible;
-    border: 2px solid #DCD6D8;
+    border: 2px solid #c5babe;
     border-radius: 2px;
     line-height: 12px;
     font-size: 14px;
@@ -157,7 +157,7 @@ input[type="checkbox"] {
     content: "\f00c";
     border-color: #349B89; }
   input[type="checkbox"]:hover:not(:checked):before {
-    color: #DCD6D8;
+    color: #c5babe;
     font-family: FontAwesome;
     content: "\f00c"; }
 
@@ -173,7 +173,7 @@ input[type="radio"] {
     margin-right: 15px;
     width: 11px;
     height: 11px;
-    border: 2px solid #DCD6D8;
+    border: 2px solid #c5babe;
     border-radius: 50%;
     visibility: visible;
     line-height: 12px;
@@ -184,7 +184,7 @@ input[type="radio"] {
     color: #349B89;
     background-color: #349B89; }
   input[type="radio"]:hover:not(:checked):before {
-    background-color: #DCD6D8; }
+    background-color: #c5babe; }
 
 fieldset {
   border: 1px solid #ad9fa4;
