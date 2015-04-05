@@ -1,7 +1,9 @@
-$input-padding: 5px;
+$input-padding: 10px;
 $input-margin: 8px;
+$border-radius: 2px;
 
 input, .input{
+    vertical-align: middle;
     margin: $input-margin 0 $input-margin 0;
     &:focus{
         outline: 0;
@@ -13,15 +15,20 @@ input, .input{
 }
 
 //Class .input no fim, caso eu não tenha coberto algum tipo
-input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="search"], input[type="tel"], .input{
-    border-radius: 2px;
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="number"], 
+input[type="search"], 
+input[type="tel"], 
+.input{
     border: 1px solid $stable;
-    padding: $input-padding 0 $input-padding 0;
+    padding: $input-padding;
     &:focus{
         border-color: $positive;
     }
     &:disabled{
-        border-color: inherit;
+        border-color: darken($stable, 20%);
     }
 }
 
@@ -37,9 +44,7 @@ input[type="checkbox"]{
         height: 12px;
         visibility: visible;
         border: 2px solid $stable;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        border-radius: 2px;
+        border-radius: $border-radius;
         line-height: 12px;
         font-size: 14px;
         text-align: center;
@@ -95,5 +100,36 @@ textarea{
 
 fieldset{
     border: 1px solid darken($stable, 20%);
-    border-radius: 3px;
+    border-radius: $border-radius;
+}
+
+.input-group{
+    margin: 0;
+    border: none;
+    padding: 0;
+    input, textarea{
+        display: block;
+        margin: 0 0 -1px;
+        border-radius: 0;
+        position: relative;
+        top: -1px;
+        &:focus{
+            z-index: 3;
+        }
+        &:first-child{
+            top: 1px;
+            border-radius: $border-radius $border-radius 0 0;
+            margin: 0;
+            &:last-child{
+                top: 1px;
+                border-radius: $border-radius;
+                margin: 0;
+            }
+        }
+        &:last-child{
+            top: -2px;
+            border-radius: 0 0 $border-radius $border-radius;
+            margin: 0;
+        }
+    }
 }
