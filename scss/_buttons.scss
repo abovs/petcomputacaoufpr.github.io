@@ -9,7 +9,7 @@
 	@include transition(background-color, 0.2s, ease);
 	&:hover{
 		cursor: pointer;
-		background-color: lighten($stable, 10%);
+		background-color: lighten($stable, 5%);
 	}
 	&:active{
         background-color: darken($stable, 10%);

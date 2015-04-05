@@ -173,7 +173,7 @@ fieldset {
   transition: background-color 0.2s ease; }
   .button:hover, .button-positive:hover, .button-primary:hover, input[type="submit"]:hover, .button-calm:hover, .button-secondary:hover, .button-energized:hover, .button-red:hover, .button-error:hover, .button-dark:hover, .button-facebook:hover, button:hover {
     cursor: pointer;
-    background-color: #f3f2f2; }
+    background-color: #e8e4e5; }
   .button:active, .button-positive:active, .button-primary:active, input[type="submit"]:active, .button-calm:active, .button-secondary:active, .button-energized:active, .button-red:active, .button-error:active, .button-dark:active, .button-facebook:active, button:active {
     background-color: #c5babe; }
   .button:focus, .button-positive:focus, .button-primary:focus, input[type="submit"]:focus, .button-calm:focus, .button-secondary:focus, .button-energized:focus, .button-red:focus, .button-error:focus, .button-dark:focus, .button-facebook:focus, button:focus {
@@ -306,6 +306,44 @@ input.warn {
     color: #EC7149; }
   input.warn:focus {
     border-color: #9b2929; }
+
+[tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer; }
+  [tooltip]:before, [tooltip]:after {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none; }
+  [tooltip]:before {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+    width: 160px;
+    border-radius: 3px;
+    background-color: #2F3439;
+    color: #DCD6D8;
+    content: attr(tooltip);
+    text-align: center;
+    font-size: 14px; }
+  [tooltip]:after {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #2F3439;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0; }
+  [tooltip]:hover:before, [tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1; }
 
 .navbar, .navbar-positive, .navbar-energized, .navbar-dark {
   padding: 15px; }
