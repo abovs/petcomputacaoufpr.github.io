@@ -3,23 +3,29 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PET UI Kit</title>
+        <title>PET CSS</title>
         <link rel="stylesheet" href="css/style.css" type="text/css" />
     </head>
     <body>
         <header>
-            <h1 class="logo center-text" id="logo">PET UI</h1>
-            <div class="navbar">
-                <nav>
-                    <a href="#buttons">Botões</a>
-                    <a href="#menus">Menus e navegação</a>
-                    <a href="#inputs">Inputs e Formulários</a>
-                    <a href="#headers">Cabeçalhos</a>
-                    <a href="#alerts">Alertas</a>
-                    <a href="#tooltips">Tooltips</a>
-                    <a href="#post">Blog Post</a>
-                </nav>
-            </div>
+            <h1 class="logo center-text" id="logo">PET css</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#buttons">Botões</a></li>
+                    <li><a href="#menus">Menus e navegação</a></li>
+                    <li><a href="#inputs">Inputs e Formulários</a></li>
+                    <li><a href="#headers">Cabeçalhos</a></li>
+                    <li><a href="#alerts">Alertas</a></li>
+                    <li><a href="#tooltips">Tooltips</a></li>
+                    <li>
+                        <a href="#exemplos">Exemplos</a>
+                        <ul>
+                            <li><a href="#post">Blog Post</a></li>
+                            <li><a href="#">Outra Coisa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <section class="content">
             <h1>Elementos Básicos</h1>
@@ -52,37 +58,65 @@
             </section>
             <section id="menus">
                 <h2>Menus e navegação</h2>
-                <div class="navbar">
-                    <a href="#logo" class="brand">Pet Ui</a>
-                    <nav class="nav-right">
-                        <a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
-                        <a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a>
-                    </nav>
-                </div>
+                <nav class="navbar">
+                    <a href="#logo" class="brand">Pet css</a>
+                    <ul class="nav-right">
+                        <li><a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a></li>
+                        <li><a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a></li>
+                        <li>
+                            <a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a>
+                            <ul>
+                                <li><a href="http://www.inf.ufpr.br/bcc/" target="_blank">Ciência da Computação</a></li>
+                                <li><a href="http://www.inf.ufpr.br/infobiomedica/" target="_blank">Informática Biomédica</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
                 <br/>
-                <div class="navbar-positive">
-                    <a href="#logo" class="brand">Pet Ui</a>
-                    <nav class="nav-right">
-                        <a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
-                        <a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a>
-                    </nav>
-                </div>
+                <nav class="navbar-positive">
+                    <a href="#logo" class="brand">Pet css</a>
+                    <ul class="nav-right">
+                        <li><a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a></li>
+                        <li><a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a></li>
+                        <li>
+                            <a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a>
+                            <ul>
+                                <li><a href="http://www.inf.ufpr.br/bcc/" target="_blank">Ciência da Computação</a></li>
+                                <li><a href="http://www.inf.ufpr.br/infobiomedica/" target="_blank">Informática Biomédica</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
                 <br/>
-                <div class="navbar-energized">
-                    <a href="#logo" class="brand">Pet Ui</a>
-                    <nav class="nav-right">
-                        <a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
-                        <a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a>
-                    </nav>
-                </div>
+                <nav class="navbar-energized">
+                    <a href="#logo" class="brand">Pet css</a>
+                    <ul class="nav-right">
+                        <li><a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a></li>
+                        <li><a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a></li>
+                        <li>
+                            <a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a>
+                            <ul>
+                                <li><a href="http://www.inf.ufpr.br/bcc/" target="_blank">Ciência da Computação</a></li>
+                                <li><a href="http://www.inf.ufpr.br/infobiomedica/" target="_blank">Informática Biomédica</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
                 <br/>
-                <div class="navbar-dark">
-                    <a href="#logo" class="brand">Pet Ui</a>
-                    <nav class="nav-right">
-                        <a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a>
-                        <a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a>
-                    </nav>
-                </div>
+                <nav class="navbar-dark">
+                    <a href="#logo" class="brand">Pet css</a>
+                    <ul class="nav-right">
+                        <li><a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a></li>
+                        <li><a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a></li>
+                        <li>
+                            <a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a>
+                            <ul>
+                                <li><a href="http://www.inf.ufpr.br/bcc/" target="_blank">Ciência da Computação</a></li>
+                                <li><a href="http://www.inf.ufpr.br/infobiomedica/" target="_blank">Informática Biomédica</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
                 <br/><br/>
                 <select>
                     <option>Elemento 1</option>
@@ -162,6 +196,9 @@
                 <br/>
                 <button class="button-calm" tooltip="Isso é uma tooltip">Passe o mouse</button>
             </section>
+        </section>
+        <section id="exemplos" class="content">
+            <h1>Exemplos</h1>
             <section id="post">
                 <h2>Blog Post</h2>
                 <article class="post">

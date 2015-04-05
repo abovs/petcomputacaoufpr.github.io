@@ -45,7 +45,7 @@
   display: table;
   margin: auto; }
 
-.full, .alert, .notice, .success, .warning, .error, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, .post .post-title {
+.full, .alert, .notice, .success, .warning, .error, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav, .post .post-title {
   width: 100%; }
 
 .half {
@@ -66,7 +66,7 @@
 .light {
   background-color: whitesmoke; }
 
-.stable, .button, .button-positive, .button-primary, input[type="submit"], .button-calm, .button-secondary, .button-energized, .button-red, .button-error, .button-dark, .button-facebook, button, .navbar, .navbar-positive, .navbar-energized, .navbar-dark {
+.stable, .button, .button-positive, .button-primary, input[type="submit"], .button-calm, .button-secondary, .button-energized, .button-red, .button-error, .button-dark, .button-facebook, button, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav {
   background-color: #DCD6D8; }
 
 .positive, .button-positive, .button-primary, input[type="submit"], .success, .navbar-positive {
@@ -388,45 +388,96 @@ input.warn {
     visibility: visible;
     opacity: 1; }
 
-.navbar, .navbar-positive, .navbar-energized, .navbar-dark {
-  padding: 15px; }
-  .navbar nav, .navbar-positive nav, .navbar-energized nav, .navbar-dark nav, .navbar ul, .navbar-positive ul, .navbar-energized ul, .navbar-dark ul {
-    list-style-type: none;
+.navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav {
+  padding: 15px;
+  color: #9b2929; }
+  .navbar ul, .navbar-positive ul, .navbar-energized ul, .navbar-dark ul, nav ul {
+    list-style: none;
     margin: 0;
     text-align: center; }
-    .navbar nav a, .navbar-positive nav a, .navbar-energized nav a, .navbar-dark nav a, .navbar ul a, .navbar-positive ul a, .navbar-energized ul a, .navbar-dark ul a {
-      text-decoration: none;
-      color: #9b2929;
-      padding: 15px; }
-      .navbar nav a:hover, .navbar-positive nav a:hover, .navbar-energized nav a:hover, .navbar-dark nav a:hover, .navbar ul a:hover, .navbar-positive ul a:hover, .navbar-energized ul a:hover, .navbar-dark ul a:hover {
-        background-color: #9b2929;
+    .navbar ul li, .navbar-positive ul li, .navbar-energized ul li, .navbar-dark ul li, nav ul li {
+      display: inline;
+      position: relative; }
+      .navbar ul li a, .navbar-positive ul li a, .navbar-energized ul li a, .navbar-dark ul li a, nav ul li a {
+        z-index: 0;
+        text-decoration: none;
+        color: inherit;
+        padding: 15px; }
+      .navbar ul li:hover > a, .navbar-positive ul li:hover > a, .navbar-energized ul li:hover > a, .navbar-dark ul li:hover > a, nav ul li:hover > a {
+        background: #9b2929;
         color: white; }
-  .navbar .nav-right, .navbar-positive .nav-right, .navbar-energized .nav-right, .navbar-dark .nav-right {
+  .navbar .nav-right, .navbar-positive .nav-right, .navbar-energized .nav-right, .navbar-dark .nav-right, nav .nav-right {
     text-align: right; }
-  .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand {
-    color: #9b2929;
+  .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand, nav .brand {
+    color: inherit;
     position: relative;
     float: left;
     font-weight: 100;
     text-decoration: none;
     letter-spacing: 5px; }
-    .navbar .brand:hover, .navbar-positive .brand:hover, .navbar-energized .brand:hover, .navbar-dark .brand:hover {
+    .navbar .brand:hover, .navbar-positive .brand:hover, .navbar-energized .brand:hover, .navbar-dark .brand:hover, nav .brand:hover {
       color: white; }
 
-.navbar-positive nav a, .navbar-positive ul a {
+.navbar ul li ul, .navbar-positive ul li ul, .navbar-energized ul li ul, .navbar-dark ul li ul, nav ul li ul {
+  z-index: 2;
+  position: absolute;
+  padding: 0;
+  top: 165%;
+  left: 0;
+  width: 200px;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  background: #9b2929;
   color: white; }
-  .navbar-positive nav a:hover, .navbar-positive ul a:hover {
-    background-color: #99CDC4;
+  .navbar ul li ul li, .navbar-positive ul li ul li, .navbar-energized ul li ul li, .navbar-dark ul li ul li, nav ul li ul li {
+    padding: 15px;
+    display: block; }
+    .navbar ul li ul li a, .navbar-positive ul li ul li a, .navbar-energized ul li ul li a, .navbar-dark ul li ul li a, nav ul li ul li a {
+      padding: 0;
+      color: inherit;
+      width: 100%;
+      height: 100%; }
+    .navbar ul li ul li:hover, .navbar-positive ul li ul li:hover, .navbar-energized ul li ul li:hover, .navbar-dark ul li ul li:hover, nav ul li ul li:hover {
+      background: #DCD6D8;
+      color: #9b2929; }
+    .navbar ul li ul li:hover > a, .navbar-positive ul li ul li:hover > a, .navbar-energized ul li ul li:hover > a, .navbar-dark ul li ul li:hover > a, nav ul li ul li:hover > a {
+      z-index: 3;
+      background: inherit;
+      color: inherit; }
+.navbar ul li:hover ul, .navbar-positive ul li:hover ul, .navbar-energized ul li:hover ul, .navbar-dark ul li:hover ul, nav ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible; }
+
+.navbar-positive {
+  color: white; }
+  .navbar-positive ul li:hover > a {
+    background: #99CDC4;
     color: #2F3439; }
-.navbar-positive .brand {
-  color: white; }
+  .navbar-positive ul li ul {
+    color: #2F3439;
+    background: #99CDC4; }
+    .navbar-positive ul li ul li:hover {
+      background: #349B89;
+      color: white; }
   .navbar-positive .brand:hover {
     color: #2F3439; }
 
-.navbar-dark nav a, .navbar-dark ul a {
+.navbar-energized ul li ul li:hover {
+  background: #EC7149;
+  color: #9b2929; }
+
+.navbar-dark ul li a {
   color: white; }
-  .navbar-dark nav a:hover, .navbar-dark ul a:hover {
-    background-color: #349B89;
+.navbar-dark ul li:hover > a {
+  background: #349B89;
+  color: #2F3439; }
+.navbar-dark ul li ul {
+  background: #2F3439;
+  color: white; }
+  .navbar-dark ul li ul li:hover {
+    background: #349B89;
     color: #2F3439; }
 .navbar-dark .brand {
   color: white; }
@@ -471,7 +522,7 @@ a {
   a:hover {
     color: #22453f; }
 
-.all-caps, .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand, .logo {
+.all-caps, .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand, nav .brand, .logo {
   text-transform: uppercase; }
 
 .logo {
