@@ -79,7 +79,7 @@
   width: 66%; }
 
 .one-quarter {
-  width: 25%; }
+  width: 24%; }
 
 .three-quarters {
   width: 74%; }
@@ -446,6 +446,8 @@ input.warn {
     top: -10px; }
 
 .navbar ul li ul, .navbar-positive ul li ul, .navbar-energized ul li ul, .navbar-dark ul li ul, nav ul li ul {
+  overflow: auto;
+  max-height: 500px;
   z-index: 2;
   position: absolute;
   padding: 0;

@@ -51,6 +51,8 @@
 .navbar, nav{
     ul li{
         ul{
+            overflow: auto;
+            max-height: 500px;
             z-index: 2;
             position: absolute;
             padding: 0;
