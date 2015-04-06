@@ -1,8 +1,9 @@
 .navbar, nav{
-    @extend .full;
-    padding: 15px;
+    //@extend .full;
+    padding: 15px 5% 15px 5%;
     @extend .stable;
     color: $red;
+    margin-bottom: 20px;
     ul{
         list-style: none;
         margin: 0;
@@ -36,8 +37,12 @@
         text-decoration: none;
         letter-spacing: 5px;
         &:hover{
-            color: white;
+            color: $dark;
         }
+    }
+    
+    h1 > a.brand{
+        top: -10px;
     }
     
 }

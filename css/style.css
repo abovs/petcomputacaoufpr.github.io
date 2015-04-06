@@ -18,8 +18,8 @@
   margin-bottom: 20px; }
 
 .margin-horizontal {
-  margin-left: 20px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  margin-left: 20px; }
 
 .padding {
   padding: 20px; }
@@ -38,6 +38,15 @@
 .center-text {
   text-align: center; }
 
+.left-text {
+  text-align: left; }
+
+.right-text {
+  text-align: right; }
+
+.justify-text {
+  text-align: justify; }
+
 .center-vertical {
   margin: auto 0 auto 0; }
 
@@ -54,10 +63,10 @@
 .vertical-bottom {
   vertical-align: bottom; }
 
-.inline-block, .full, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav, .post .post-title, .half, .one-third, .two-thirds, .one-quarter, .three-quarters {
+.inline-block, .full, .post .post-title, .half, .one-third, .two-thirds, .one-quarter, .three-quarters {
   display: inline-block; }
 
-.full, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav, .post .post-title {
+.full, .post .post-title {
   width: 100%; }
 
 .half {
@@ -73,7 +82,7 @@
   width: 25%; }
 
 .three-quarters {
-  width: 75%; }
+  width: 74%; }
 
 .light {
   background-color: whitesmoke; }
@@ -95,6 +104,9 @@
 
 .red, .button-red, .button-error, .error {
   background-color: #9b2929; }
+
+.no-color {
+  background-color: transparent !important; }
 
 input, .input, textarea {
   vertical-align: middle;
@@ -401,8 +413,9 @@ input.warn {
     opacity: 1; }
 
 .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav {
-  padding: 15px;
-  color: #9b2929; }
+  padding: 15px 5% 15px 5%;
+  color: #9b2929;
+  margin-bottom: 20px; }
   .navbar ul, .navbar-positive ul, .navbar-energized ul, .navbar-dark ul, nav ul {
     list-style: none;
     margin: 0;
@@ -428,7 +441,9 @@ input.warn {
     text-decoration: none;
     letter-spacing: 5px; }
     .navbar .brand:hover, .navbar-positive .brand:hover, .navbar-energized .brand:hover, .navbar-dark .brand:hover, nav .brand:hover {
-      color: white; }
+      color: #2F3439; }
+  .navbar h1 > a.brand, .navbar-positive h1 > a.brand, .navbar-energized h1 > a.brand, .navbar-dark h1 > a.brand, nav h1 > a.brand {
+    top: -10px; }
 
 .navbar ul li ul, .navbar-positive ul li ul, .navbar-energized ul li ul, .navbar-dark ul li ul, nav ul li ul {
   z-index: 2;
@@ -517,7 +532,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2em; }
 
-section {
+.section {
   padding-bottom: 20px;
   border-bottom: 1px solid #DCD6D8;
   margin-bottom: 20px; }

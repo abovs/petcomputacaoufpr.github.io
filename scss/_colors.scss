@@ -34,3 +34,7 @@ $red: #9b2929; //Cor retirada do antigo site
 .red{
     background-color: $red;
 }
+
+.no-color{
+    background-color: rgba(0,0,0,0) !important;
+}

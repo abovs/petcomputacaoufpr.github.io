@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PET Computação UFPR</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <style>
+            .brand{
+                font-weight: 300 !important;
+            }
+            .avatar{
+                border-radius: 50%;
+                display: block;
+                width: 30%;
+            }
+            #map-canvas {
+                width: 100%;
+                height: 500px;
+            }
+        </style>
+        <!--Api do Google Maps-->
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function initialize() {
+                var mapCanvas = document.getElementById('map-canvas');
+                var latLgn = new google.maps.LatLng(-25.45072, -49.232287);
+                var mapOptions = {
+                    center: latLgn,
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP, 
+                    minZoom: 14,
+                    scrollwheel: false
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({
+                    position: latLgn,
+                    map: map,
+                    title: 'PET Computação UFPR'
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </head>
+    <body>
+        <!--Facebook API-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <header>
+            <nav class="">
+                <h1><a href="#" class="brand">PET Computação ufpr</a></h1>
+                <ul class="nav-right all-caps">
+                    <li><a href="#sobre-nos">Sobre nós</a></li>
+                    <li><a href="#membros">Membros</a></li>
+                    <li>
+                        <a href="#projetos">Cursos</a>
+                        <ul>
+                            <li><a href="">Curso de Informática para Imigrantes</a></li>
+                            <li><a href="">Curso de Git</a></li>
+                            <li><a href="">Curso de LaTeX</a></li>
+                            <li><a href="">Curso de Linux</a></li>
+                            <li><a href="">Curso de ShellScript</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#projetos">Projetos</a>
+                        <ul>
+                            <li><a href="">A.D.E.G.A.</a></li>
+                            <li><a href="">Cartão do R.U.</a></li>
+                            <li><a href="">Fisiologia Digital</a></li>
+                            <li><a href="">Geolocalização</a></li>
+                            <li><a href="">Grupos de estudo</a></li>
+                            <li><a href="">InterPET nas Escolas</a></li>
+                            <li><a href="">J.A.R.V.I.S.</a></li>
+                            <li><a href="">Jogo para apoio psicológico</a></li>
+                            <li><a href="">Oficina de Vestibulandos</a></li>
+                            <li><a href="">Trajetória de Organelas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="content">
+            <section class="three-quarters vertical-top">
+                <h2 class="left-text">
+                    <a href="">
+                        <i class="fa fa-newspaper-o"></i> Últimas novidades
+                    </a>
+                </h2>
+                <div id="slider">
+                    <img style="max-width:100%" src="http://placehold.it/960x400/efefef">
+                </div>
+            </section>
+            <section class="one-quarter vertical-top">
+                <h2><i class="fa fa-star"></i> Links Importantes</h2>
+                <ul>
+                    <li><a href="http://pet.inf.ufpr.br/farol/">Farol - Repositório de Provas</a></li>
+                	<li><a href="http://www.inf.ufpr.br/dinf/" target="_blank">Departamento de Informática</a></li>
+                	<li><a href="http://www.engprod.ufpr.br/calendario2014.pdf" target="_blank">Calendário Acadêmico</a></li>
+                	<li><a href="http://www.inf.ufpr.br/dinf/infratecfaqs.html#faq4" target="_blank">Redirecionando seu e-mail DINF</a> </li>
+                	<li><a href="http://code.google.com/p/anotacoes-ufpr/source/browse/#svn%2Ftrunk" target="_blank">Repositório de provas e trabalhos</a></li>
+                	<li><a href="apostilas/" target="_blank">Apostilas do PET Computação</a></li>
+                	<li><a href="http://portaldoaluno.ufpr.br" target="_blank">Portal do Aluno</a></li>
+                </ul>
+            </section>
+            <article id="sobre-nos" class="justify-text section">
+                <h1 class="center-text">Sobre nós</h1>
+                <p>O PET Computação da Universidade Federal do Paraná foi criado
+                em abril de 1992 após uma solicitação à CAPES, segunda a qual o 
+                curso já dispunha de recursos suficientes e objetivos promissores
+                que realmente justificavam a implantação do grupo.</p>
+                <p>Inicialmente denominado PET Informática, devido ao antigo 
+                nome do curso de graduação ao qual pertence, foi designada a 
+                professora Mírian Halfeld Ferrari Alves como tutora. O grupo 
+                inicialmente constava de quatro bolsistas: Helena Noriko Yamamura, 
+                João Alberto Fabro, Mauro Yukio Washimi e Wellington Camargo.</p>
+                <p><a href="#">Leia mais</a></p>
+            </article>
+            <section id="membros" class="section">
+                <h1 class="center-text">Membros</h1>
+                <section>
+                    <div class="center-text inline-block one-third">
+                        <img class="avatar center-block" src="https://daks2k3a4ib2z.cloudfront.net/55023078579be49d59b46801/550248e55f31986a55e1c86b_avatar_default_large.png">
+                        <span>Ipsum Lorem</span>
+                    </div>
+                    <div class="center-text inline-block one-third">
+                        <img class="avatar center-block" src="https://daks2k3a4ib2z.cloudfront.net/55023078579be49d59b46801/550248e55f31986a55e1c86b_avatar_default_large.png">
+                        <span>Ipsum Lorem</span>
+                    </div>
+                    <div class="center-text inline-block one-third">
+                        <img class="avatar center-block" src="https://daks2k3a4ib2z.cloudfront.net/55023078579be49d59b46801/550248e55f31986a55e1c86b_avatar_default_large.png">
+                        <span>Ipsum Lorem</span>
+                    </div>
+                    <div class="center-text inline-block one-third">
+                        <img class="avatar center-block" src="https://daks2k3a4ib2z.cloudfront.net/55023078579be49d59b46801/550248e55f31986a55e1c86b_avatar_default_large.png">
+                        <span>Ipsum Lorem</span>
+                    </div>
+                    <div class="center-text inline-block one-third">
+                        <img class="avatar center-block" src="https://daks2k3a4ib2z.cloudfront.net/55023078579be49d59b46801/550248e55f31986a55e1c86b_avatar_default_large.png">
+                        <span>Ipsum Lorem</span>
+                    </div>
+                    <div class="center-text inline-block one-third">
+                        <img class="avatar center-block" src="https://daks2k3a4ib2z.cloudfront.net/55023078579be49d59b46801/550248e55f31986a55e1c86b_avatar_default_large.png">
+                        <span>Ipsum Lorem</span>
+                    </div>
+                </section>
+            </section>
+            <section id="projetos" class="section">
+                <h1 class="center-text">Projetos e Cursos</h1>
+                <article class="left-text">
+                    <p class="center-text">
+                        As atividades do PET Computação são divididas em 
+                        <strong tooltip="Alguns dizem que são mais...">três</strong> 
+                        eixos:
+                    </p>
+                    <div class="one-third vertical-top">
+                        <h2>Pesquisa:</h2>
+                        <ul>
+                            <li><a href="">Cartão do R.U.</a></li>
+                            <li><a href="">Fisiologia Digital</a></li>
+                            <li><a href="">Geolocalização</a></li>
+                            <li><a href="">J.A.R.V.I.S.</a></li>
+                            <li><a href="">Jogo para Apoio Psicológico</a></li>
+                            <li><a href="">Trajetória de Organelas</a></li>
+                        </ul>
+                    </div>
+                    <div class="one-third vertical-top">
+                        <h2>Ensino:</h2>
+                        <ul>
+                            <li><a href="">A.D.E.G.A.</a></li>
+                            <li><a href="">Curso de Git</a></li>
+                            <li><a href="">Curso de LaTeX</a></li>
+                            <li><a href="">Curso de Linux</a></li>
+                            <li><a href="">Curso de ShellScript</a></li>
+                            <li><a href="">Seminários</a></li>
+                        </ul>
+                    </div>
+                    <div class="one-third vertical-top">
+                        <h2>Extensão:</h2>
+                        <ul>
+                            <li><a href="">Curso de Informática para Imigrantes</a></li>
+                            <li><a href="">InterPET nas Escolas</a></li>
+                            <li><a href="">Oficina de Vestibulandos</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section id="contato" class="margin-vertical left-text section">
+                <h1 class="center-text">Contato</h1>
+                <p>Email: pet@inf.ufpr.br</p>
+                <p>O PET Computação fica localizado no prédio da administração,
+                na frente do caixa automático do Itaú e próximo a passarela da 
+                biblioteca.</p>
+                <div id="map-canvas"></div>
+                <div class="fb-like margin-vertical" data-href="https://www.facebook.com/petcompufpr" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+            </section>
+        </section>
+        <footer class="center-text padding-vertical">
+            <p>PET Computação UFPR - Desde 1992 <br/> &copy 2015</p>
+        </footer>
+    </body>
+</html>
