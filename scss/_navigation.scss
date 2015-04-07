@@ -3,6 +3,8 @@
     padding: 15px 5% 15px 5%;
     @extend .stable;
     color: $red;
+    box-shadow: 0 1px 3px $dark;
+    z-index: 0;
     ul{
         list-style: none;
         margin: 0;
@@ -65,6 +67,7 @@
             visibility: hidden;
             background: $red;
             color: white;
+            box-shadow: inset 1px 1px 5px $red;
             li{
                 padding: 15px;
                 display: block;
@@ -78,7 +81,6 @@
                     background: lighten($red, 10%);
                 }
                 &:hover > a{
-                    z-index: 3;
                     background: inherit;
                     color: inherit;
                 }
@@ -105,6 +107,7 @@
                 color: $calm;
             }
             ul{
+                box-shadow: inset 1px 1px 5px $dark;
                 color: $calm;
                 background: $dark;
                 li:hover{
@@ -139,6 +142,7 @@
                 color: $dark;
             }
             ul{
+                box-shadow: inset 1px 1px 5px $positive;
                 background: $positive;
                 color: $dark;
                 li:hover{

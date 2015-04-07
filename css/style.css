@@ -428,7 +428,9 @@ input.warn {
 
 .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav {
   padding: 15px 5% 15px 5%;
-  color: #9b2929; }
+  color: #9b2929;
+  box-shadow: 0 1px 3px #2F3439;
+  z-index: 0; }
   .navbar ul, .navbar-positive ul, .navbar-energized ul, .navbar-dark ul, nav ul {
     list-style: none;
     margin: 0;
@@ -472,7 +474,8 @@ input.warn {
   opacity: 0;
   visibility: hidden;
   background: #9b2929;
-  color: white; }
+  color: white;
+  box-shadow: inset 1px 1px 5px #9b2929; }
   .navbar ul li ul li, .navbar-positive ul li ul li, .navbar-energized ul li ul li, .navbar-dark ul li ul li, nav ul li ul li {
     padding: 15px;
     display: block; }
@@ -484,7 +487,6 @@ input.warn {
     .navbar ul li ul li:hover, .navbar-positive ul li ul li:hover, .navbar-energized ul li ul li:hover, .navbar-dark ul li ul li:hover, nav ul li ul li:hover {
       background: #c33434; }
     .navbar ul li ul li:hover > a, .navbar-positive ul li ul li:hover > a, .navbar-energized ul li ul li:hover > a, .navbar-dark ul li ul li:hover > a, nav ul li ul li:hover > a {
-      z-index: 3;
       background: inherit;
       color: inherit; }
 .navbar ul li:hover ul, .navbar-positive ul li:hover ul, .navbar-energized ul li:hover ul, .navbar-dark ul li:hover ul, nav ul li:hover ul {
@@ -498,6 +500,7 @@ input.warn {
     background: #2F3439;
     color: #99CDC4; }
   .navbar-positive ul li ul {
+    box-shadow: inset 1px 1px 5px #2F3439;
     color: #99CDC4;
     background: #2F3439; }
     .navbar-positive ul li ul li:hover {
@@ -511,6 +514,7 @@ input.warn {
   background: #349B89;
   color: #2F3439; }
 .navbar-dark ul li ul {
+  box-shadow: inset 1px 1px 5px #349B89;
   background: #349B89;
   color: #2F3439; }
   .navbar-dark ul li ul li:hover {
