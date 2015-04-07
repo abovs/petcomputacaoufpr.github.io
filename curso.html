@@ -14,64 +14,86 @@
                 display: block;
                 width: 30%;
             }
+            .header{
+                padding: 20px;
+            }
+            .logo{
+                color: white;
+                border-bottom: 1px solid white;
+                margin: 0 0 10px;
+                display: block;
+            }
         </style>
     </head>
     <body>
-        <header>
-            <nav>
-                <h1><a href="pet.html" class="brand">Pet Computação ufpr</a></h1>
-                <ul class="nav-right">
-                    <li><a href="#o-que-e">O que é?</a></li>
-                    <li><a href="#sobre">Sobre o curso</a></li>
-                    <li><a href="#local">Local e Data</a></li>
-                    <li><a href="#inscreva-se">Inscreva-se</a></li>
-                    <li><a href="#downloads">Downloads</a></li>
-                </ul>
-            </nav>
+        <nav class="navbar-energized">
+            <h1><a href="pet.html" class="brand">Pet Computação ufpr</a></h1>
+            <ul class="nav-right">
+                <li><a href="#o-que-e">O que é?</a></li>
+                <li><a href="#sobre">Sobre o curso</a></li>
+                <li><a href="#local">Local e Data</a></li>
+                <li><a href="#inscreva-se">Inscreva-se</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+            </ul>
+        </nav>
+        <header class="header energized">
+            <div class="center-block">
+                <h1 class="logo center-text">Curso</h1>
+            </div>
+            <img style="max-width:100%" src="http://placehold.it/960x300/efefef" class="magin-vertical center-block">
         </header>
-        <img style="max-width:100%" src="http://placehold.it/960x300/efefef" class="magin-vertical center-block">
-        <section class="content justify-text">
+        <section class="content center-text">
             <section id="o-que-e" class="section">
-                <h1 class="center-text">O que é?</h1>
-                <p>
+                <h1 class="">O que é?</h1>
+                <p class="justify-text">
                     Este curso é maravilhoso e 11/10, ganhou vários prêmios e é
                     reconhecido internacionalmente. Ele serve para tantas coisas
                     que é impossível descrever sua utilidade para a sociedade, sendo
                     inúmeras as possibilidades.
                 </p>
-                <p>
+                <p class="justify-text">
                     Este curso vem sendo desenvolvido para ajudar as pessoas a
                     fazerem muitas coisas legais.
                 </p>
             </section>
             <section id="sobre" class="section">
-                <h1>Objetivos</h1>
+                <h1 class="">Objetivos</h1>
                 <p>
                     O conteúdo desse curso aborda desde o básico sobre tudo até
                     o mais avançado sobre assuntos muito complexos.
                 </p>
             </section>
             <section id="local" class="section">
-                <h1 class="center-text">Local e Data</h1>
+                <h1 class="">Local e data</h1>
                 <p>
                     O curso ocorre no prédio A, rua ASD, nº 10, às 15 todo sábado
                 </p>
             </section>
-            <section id="downloads" class="section center-text">
+            <section id="inscreva-se" class="section">
+                <h1>Inscreva-se</h1>
+                <p>No momento as inscrições não estão abertas. Deixe seu contato
+                para ser informado quando elas abrirem.</p>
+                <form>
+                    <input type="text" name="" placeholder="Nome"/>
+                    <input type="text" name="" placeholder="E-mail"/>
+                    <input type="submit" value="Enviar"/>
+                </form>
+            </section>
+            <section id="downloads" class="section ">
                 <h1>Downloads</h1>
                 <p>Arquivos legais que foram feitos com esse projeto</p>
-                <div>
-                    <ul class="one-quarter no-margin">
+                <div class="left-text center-block">
+                    <ul class="inline-block margin">
                         <li><a href="">Arquivo 1</a></li>
                         <li><a href="">Arquivo 2</a></li>
                         <li><a href="">Arquivo 3</a></li>
                     </ul>
-                    <ul class="one-quarter no-margin">
+                    <ul class="inline-block margin">
                         <li><a href="">Arquivo 1</a></li>
                         <li><a href="">Arquivo 2</a></li>
                         <li><a href="">Arquivo 3</a></li>
                     </ul>
-                    <ul class="one-quarter no-margin">
+                    <ul class="inline-block margin">
                         <li><a href="">Arquivo 1</a></li>
                         <li><a href="">Arquivo 2</a></li>
                         <li><a href="">Arquivo 3</a></li>
@@ -79,5 +101,8 @@
                 </div>
             </section>
         </section>
+        <footer class="center-text padding-vertical energized">
+            <p>PET Computação UFPR - Desde 1992 <br/> &copy 2015</p>
+        </footer>
     </body>
 </html>

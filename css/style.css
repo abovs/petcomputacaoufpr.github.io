@@ -414,8 +414,7 @@ input.warn {
 
 .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav {
   padding: 15px 5% 15px 5%;
-  color: #9b2929;
-  margin-bottom: 20px; }
+  color: #9b2929; }
   .navbar ul, .navbar-positive ul, .navbar-energized ul, .navbar-dark ul, nav ul {
     list-style: none;
     margin: 0;
