@@ -101,6 +101,10 @@ $margin: 20px;
     width: 33%;
 }
 
+.one-third-max{
+    max-width: 33%;
+}
+
 .two-thirds{
     @extend .inline-block;
     width: 66%;

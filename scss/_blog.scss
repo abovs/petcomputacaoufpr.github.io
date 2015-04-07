@@ -3,14 +3,24 @@
         max-width: 100%;
     }
     .post-title{
-        @extend .full;
         border-bottom: 1px solid $calm;
         margin-bottom: 5px;
     }
     .post-content{
-        .post-time{
-            font-weight: 100;
-            font-size: .9em;
+        @extend .justify-text;
+    }
+}
+
+.post-time{
+    font-weight: 100;
+    font-size: .9em;
+}
+
+.post-list{
+    .post{
+        .post-title{
+            border: none;
+            font-weight: bold;
         }
     }
 }

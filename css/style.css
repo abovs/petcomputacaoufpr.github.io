@@ -44,7 +44,7 @@
 .right-text {
   text-align: right; }
 
-.justify-text {
+.justify-text, .post .post-content {
   text-align: justify; }
 
 .center-vertical {
@@ -63,10 +63,10 @@
 .vertical-bottom {
   vertical-align: bottom; }
 
-.inline-block, .full, .post .post-title, .half, .one-third, .two-thirds, .one-quarter, .three-quarters {
+.inline-block, .full, .half, .one-third, .two-thirds, .one-quarter, .three-quarters {
   display: inline-block; }
 
-.full, .post .post-title {
+.full {
   width: 100%; }
 
 .half {
@@ -74,6 +74,9 @@
 
 .one-third {
   width: 33%; }
+
+.one-third-max {
+  max-width: 33%; }
 
 .two-thirds {
   width: 66%; }
@@ -87,10 +90,10 @@
 .light {
   background-color: whitesmoke; }
 
-.stable, .button, .button-positive, .button-primary, input[type="submit"], .button-calm, .button-secondary, .button-energized, .button-red, .button-error, .button-dark, .button-facebook, button, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav {
+.stable, .button, .button-positive, .button-primary, .button-calm, .button-secondary, .button-energized, .button-red, .button-error, .button-dark, .button-facebook, button, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav {
   background-color: #DCD6D8; }
 
-.positive, .button-positive, .button-primary, input[type="submit"], .success, .navbar-positive {
+.positive, .button-positive, .button-primary, .success, .navbar-positive {
   background-color: #349B89; }
 
 .calm, .button-calm, .button-secondary, .notice {
@@ -227,60 +230,71 @@ fieldset {
       border-radius: 0 0 2px 2px;
       margin: 0; }
 
-.button, .button-positive, .button-primary, input[type="submit"], .button-calm, .button-secondary, .button-energized, .button-red, .button-error, .button-dark, .button-facebook, button {
+.button, .button-positive, .button-primary, .button-calm, .button-secondary, .button-energized, .button-red, .button-error, .button-dark, .button-facebook, button {
   border: none;
   padding: 10px 14px;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 2px;
   font-weight: 100;
+  text-decoration: none;
   -webkit-transition: background-color 0.2s ease;
   -moz-transition: background-color 0.2s ease;
   -ms-transition: background-color 0.2s ease;
   -o-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease; }
-  .button:hover, .button-positive:hover, .button-primary:hover, input[type="submit"]:hover, .button-calm:hover, .button-secondary:hover, .button-energized:hover, .button-red:hover, .button-error:hover, .button-dark:hover, .button-facebook:hover, button:hover {
+  .button:hover, .button-positive:hover, .button-primary:hover, .button-calm:hover, .button-secondary:hover, .button-energized:hover, .button-red:hover, .button-error:hover, .button-dark:hover, .button-facebook:hover, button:hover {
     cursor: pointer;
     background-color: #e8e4e5; }
-  .button:active, .button-positive:active, .button-primary:active, input[type="submit"]:active, .button-calm:active, .button-secondary:active, .button-energized:active, .button-red:active, .button-error:active, .button-dark:active, .button-facebook:active, button:active {
+  .button:active, .button-positive:active, .button-primary:active, .button-calm:active, .button-secondary:active, .button-energized:active, .button-red:active, .button-error:active, .button-dark:active, .button-facebook:active, button:active {
     background-color: #c5babe; }
-  .button:focus, .button-positive:focus, .button-primary:focus, input[type="submit"]:focus, .button-calm:focus, .button-secondary:focus, .button-energized:focus, .button-red:focus, .button-error:focus, .button-dark:focus, .button-facebook:focus, button:focus {
+  .button:focus, .button-positive:focus, .button-primary:focus, .button-calm:focus, .button-secondary:focus, .button-energized:focus, .button-red:focus, .button-error:focus, .button-dark:focus, .button-facebook:focus, button:focus {
     outline: 0; }
 
-.button-positive, .button-primary, input[type="submit"] {
+.button-positive, .button-primary {
   color: white; }
-  .button-positive:hover, .button-primary:hover, input[type="submit"]:hover {
+  .button-positive:hover, .button-primary:hover {
+    color: white;
     background-color: #42c0aa; }
-  .button-positive:active, .button-primary:active, input[type="submit"]:active {
+  .button-positive:active, .button-primary:active {
+    color: white;
     background-color: #277567; }
 
 .button-calm, .button-secondary {
   color: white; }
   .button-calm:hover, .button-secondary:hover {
+    color: white;
     background-color: #bbded8; }
   .button-calm:active, .button-secondary:active {
+    color: white;
     background-color: #77bcb0; }
 
 .button-energized {
   color: white; }
   .button-energized:hover {
+    color: white;
     background-color: #f19577; }
   .button-energized:active {
+    color: white;
     background-color: #e74d1b; }
 
 .button-red, .button-error {
   color: white; }
   .button-red:hover, .button-error:hover {
-    background-color: #c33434; }
+    background-color: #c33434;
+    color: white; }
   .button-red:active, .button-error:active {
+    color: white;
     background-color: #731e1e; }
 
 .button-dark {
   color: white; }
   .button-dark:hover {
-    background-color: #464d55; }
+    background-color: #464d55;
+    color: white; }
   .button-dark:active {
-    background-color: #181a1d; }
+    background-color: #181a1d;
+    color: white; }
 
 .button-facebook {
   background-color: #344e86;
@@ -424,9 +438,10 @@ input.warn {
       position: relative; }
       .navbar ul li a, .navbar-positive ul li a, .navbar-energized ul li a, .navbar-dark ul li a, nav ul li a {
         z-index: 0;
-        text-decoration: none;
         color: inherit;
         padding: 15px; }
+        .navbar ul li a:hover, .navbar-positive ul li a:hover, .navbar-energized ul li a:hover, .navbar-dark ul li a:hover, nav ul li a:hover {
+          text-decoration: none; }
       .navbar ul li:hover > a, .navbar-positive ul li:hover > a, .navbar-energized ul li:hover > a, .navbar-dark ul li:hover > a, nav ul li:hover > a {
         background: #9b2929;
         color: white; }
@@ -437,10 +452,10 @@ input.warn {
     position: relative;
     float: left;
     font-weight: 100;
-    text-decoration: none;
     letter-spacing: 5px; }
     .navbar .brand:hover, .navbar-positive .brand:hover, .navbar-energized .brand:hover, .navbar-dark .brand:hover, nav .brand:hover {
-      color: #2F3439; }
+      color: #2F3439;
+      text-decoration: none; }
   .navbar h1 > a.brand, .navbar-positive h1 > a.brand, .navbar-energized h1 > a.brand, .navbar-dark h1 > a.brand, nav h1 > a.brand {
     top: -10px; }
 
@@ -480,13 +495,13 @@ input.warn {
 .navbar-positive {
   color: white; }
   .navbar-positive ul li:hover > a {
-    background: #99CDC4;
-    color: #2F3439; }
+    background: #2F3439;
+    color: #99CDC4; }
   .navbar-positive ul li ul {
-    color: #2F3439;
-    background: #99CDC4; }
+    color: #99CDC4;
+    background: #2F3439; }
     .navbar-positive ul li ul li:hover {
-      background: #bbded8; }
+      background: #464d55; }
   .navbar-positive .brand:hover {
     color: #2F3439; }
 
@@ -517,15 +532,22 @@ select {
 .post .post-title {
   border-bottom: 1px solid #99CDC4;
   margin-bottom: 5px; }
-.post .post-content .post-time {
+
+.post-time {
   font-weight: 100;
   font-size: .9em; }
+
+.post-list .post .post-title {
+  border: none;
+  font-weight: bold; }
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2F3439;
   background: whitesmoke;
-  margin: 0; }
+  margin: 0;
+  min-height: 100%;
+  position: relative; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif; }
@@ -539,8 +561,10 @@ h1 {
   margin-bottom: 20px; }
 
 a {
-  color: #55ab9c; }
+  color: #55ab9c;
+  text-decoration: none; }
   a:hover {
+    text-decoration: underline;
     color: #22453f; }
 
 .all-caps, .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand, nav .brand, .logo {
@@ -553,13 +577,18 @@ a {
   font-size: 4.5em; }
 
 .content {
-  padding: 0 15% 0 15%; }
+  padding: 0 15% 140px 15%; }
 
 footer {
   background-color: #9b2929;
   color: white;
   font-weight: 300;
-  font-size: .9em; }
+  font-size: .9em;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
   footer a {
     color: #f3a78e; }
     footer a:hover {

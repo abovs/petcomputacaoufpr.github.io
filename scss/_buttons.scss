@@ -6,6 +6,7 @@
 	margin-bottom: 10px;
 	border-radius: 2px;
 	font-weight: 100;
+	text-decoration: none;
 	@include transition(background-color, 0.2s, ease);
 	&:hover{
 		cursor: pointer;
@@ -24,9 +25,11 @@
     @extend .positive;
     color: white;
     &:hover{
+        color: white;
 		background-color: lighten($positive, 10%);
 	}
 	&:active{
+        color: white;
         background-color: darken($positive, 10%);
     }
 }
@@ -36,9 +39,11 @@
     @extend .calm;
     color: white;
     &:hover{
+        color: white;
 		background-color: lighten($calm, 10%);
 	}
 	&:active{
+        color: white;
         background-color: darken($calm, 10%);
     }
 }
@@ -48,9 +53,11 @@
     @extend .energized;
     color: white;
     &:hover{
+        color: white;
 		background-color: lighten($energized, 10%);
 	}
 	&:active{
+        color: white;
         background-color: darken($energized, 10%);
     }
 }
@@ -61,8 +68,10 @@
     color: white;
     &:hover{
 		background-color: lighten($red, 10%);
+        color: white;
 	}
 	&:active{
+        color: white;
         background-color: darken($red, 10%);
     }
 }
@@ -73,9 +82,11 @@
     color: white;
     &:hover{
 		background-color: lighten($dark, 10%);
+		color: white;
 	}
 	&:active{
         background-color: darken($dark, 10%);
+		color: white;
     }
 }
 
@@ -104,18 +115,6 @@
     padding: 20px 28px;
 }
 
-.button-primary, input[type="submit"]{
-    @extend .button-positive;
-}
-
-.button-secondary{
-    @extend .button-calm;
-}
-
-.button-error{
-    @extend .button-red;
-}
-
 .button-clean{
     border: none;
     margin: 0;
@@ -129,4 +128,16 @@
     &:hover{
         background-color: inherit;
     }
+}
+
+.button-primary{
+    @extend .button-positive;
+}
+
+.button-secondary{
+    @extend .button-calm;
+}
+
+.button-error{
+    @extend .button-red;
 }
