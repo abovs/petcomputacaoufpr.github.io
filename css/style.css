@@ -747,7 +747,7 @@ input.warn {
     opacity: 1; }
 
 .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav {
-  padding: 30px 5% 15px 5%;
+  padding: 20px 5% 20px 5%;
   color: #9b2929;
   box-shadow: 0 1px 3px #2F3439;
   z-index: 0; }
@@ -761,14 +761,14 @@ input.warn {
       .navbar ul li a, .navbar-positive ul li a, .navbar-energized ul li a, .navbar-dark ul li a, nav ul li a {
         z-index: 0;
         color: inherit;
-        padding: 15px; }
+        padding: 20px; }
         .navbar ul li a:hover, .navbar-positive ul li a:hover, .navbar-energized ul li a:hover, .navbar-dark ul li a:hover, nav ul li a:hover {
           text-decoration: none; }
       .navbar ul li:hover > a, .navbar-positive ul li:hover > a, .navbar-energized ul li:hover > a, .navbar-dark ul li:hover > a, nav ul li:hover > a {
         background: #9b2929;
         color: white; }
   .navbar .nav-right, .navbar-positive .nav-right, .navbar-energized .nav-right, .navbar-dark .nav-right, nav .nav-right {
-    text-align: right; }
+    float: right; }
   .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand, nav .brand {
     color: inherit;
     position: relative;
@@ -813,6 +813,9 @@ input.warn {
   display: block;
   opacity: 1;
   visibility: visible; }
+
+.navbar-extended {
+  padding-top: 60px; }
 
 .navbar-positive {
   color: white; }
