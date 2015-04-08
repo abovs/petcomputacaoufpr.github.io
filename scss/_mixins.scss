@@ -14,8 +14,39 @@
     transition: $transition-property $transition-time $method;
 }
 
+
+/*Mixin para breakpoints
+* Uso:
+* @include breakpoint(extra-large){width: 100%}
+* @include breakpoint(large){width: 80%}
+* @include breakpoint(medium){width: 66%}
+* @include breakpoint(small){width: 33%}
+*/
+@mixin breakpoint($point) {
+    @if $point == xlarge{
+        @media screen and (min-width: 80em) { @content; }
+    }
+    @else if $point == large {
+        @media screen and (min-width: 64em) { @content; }
+    }
+    @else if $point == medium {
+        @media screen and (min-width: 48em) { @content; }
+    }
+    @else if $point == small {
+        @media screen and (min-width: 35.5em)  { @content; }
+    }
+}
+
 %clearfix:after{
     display: block;
     clear: both;
     content: '';
+}
+
+%box-size{
+    box-sizing: box-border;
+}
+
+.ellipsis{
+    text-overflow: ellipsis;
 }
