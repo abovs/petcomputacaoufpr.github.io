@@ -1,6 +1,11 @@
 @import url(//fonts.googleapis.com/css?family=Lato:100,300,400);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+.navbar:after, .navbar-positive:after, .navbar-energized:after, .navbar-dark:after, nav:after {
+  display: block;
+  clear: both;
+  content: ''; }
+
 .float-right {
   float: right; }
 
@@ -10,7 +15,7 @@
 .margin {
   margin: 20px; }
 
-.no-margin {
+.no-margin, .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand, nav .brand {
   margin: 0; }
 
 .margin-vertical {
@@ -427,7 +432,7 @@ input.warn {
     opacity: 1; }
 
 .navbar, .navbar-positive, .navbar-energized, .navbar-dark, nav {
-  padding: 15px 5% 15px 5%;
+  padding: 30px 5% 15px 5%;
   color: #9b2929;
   box-shadow: 0 1px 3px #2F3439;
   z-index: 0; }
@@ -467,7 +472,7 @@ input.warn {
   z-index: 2;
   position: absolute;
   padding: 0;
-  top: 165%;
+  top: 100%;
   left: 0;
   width: 200px;
   display: none;

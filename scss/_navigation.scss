@@ -1,7 +1,7 @@
 .navbar, nav{
-    //@extend .full;
-    padding: 15px 5% 15px 5%;
+    @extend %clearfix;
     @extend .stable;
+    padding: 30px 5% 15px 5%;
     color: $red;
     box-shadow: 0 1px 3px $dark;
     z-index: 0;
@@ -32,10 +32,11 @@
     }
     
     .brand{
+        @extend .all-caps;
+        @extend .no-margin;
         color: inherit;
         position: relative;
         float: left;
-        @extend .all-caps;
         font-weight: 100;
         letter-spacing: 5px;
         &:hover{
@@ -59,7 +60,7 @@
             z-index: 2;
             position: absolute;
             padding: 0;
-            top: 165%;
+            top: 100%;
             left: 0;
             width: 200px;
             display: none;
