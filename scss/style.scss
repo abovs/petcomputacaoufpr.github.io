@@ -32,8 +32,12 @@
 }
 
 .content{
-    padding: 0 10% (100px + 2*$padding) 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: (100px + 2*$padding);
     @include breakpoint(medium){
-        padding: 0 5% $padding 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: $padding;
     }
 }

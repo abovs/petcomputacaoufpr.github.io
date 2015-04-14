@@ -9,93 +9,32 @@
             .brand{
                 font-weight: 300 !important;
             }
-            .membro{
-                box-sizing: border-box;
-                border-radius: 3px;
-                text-align: center;
-                margin-bottom: 15px;
-            }
-            .membro .nome{
-                display: block;
-            }
-            .membro .curso{
-                text-transform: uppercase;
-                font-weight: 100;
-                display: block;
-            }
-            .membro a{
-                display: block;
-            }
-            #map-canvas {
-                width: 80%;
-                height: 400px;
-                margin: 0 auto;
-            }
-            a{
-                color: #9b2929;
-            }
         </style>
-        <!--Api do Google Maps-->
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script>
-            function initialize() {
-                var mapCanvas = document.getElementById('map-canvas');
-                var latLgn = new google.maps.LatLng(-25.45072, -49.232287);
-                var mapOptions = {
-                    center: latLgn,
-                    zoom: 16,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP, 
-                    minZoom: 14,
-                    scrollwheel: false
-                };
-                var map = new google.maps.Map(mapCanvas, mapOptions);
-                var marker = new google.maps.Marker({
-                    position: latLgn,
-                    map: map,
-                    title: 'PET Computação UFPR'
-                });
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
     </head>
     <body>
-        <!--Facebook API-->
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-        
         <nav class="navbar-dark navbar-extended">
-            <h1 class="no-margin"><a href="#" class="brand">PET Computação ufpr</a></h1>
+            <h1 class="no-margin brand"><a href="#">PET Computação ufpr</a></h1>
             <label for="toggle" class="menu-toggle" onclick></label>
             <input type="checkbox" class="menu-toggle" id="toggle"/>
             <ul class="nav-itens all-caps">
-                <li><a href="#sobre-nos">Sobre nós</a></li>
-                <li><a href="#membros">Membros</a></li>
-                <li><a href="#projetos">Cursos</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="membros.html">Membros</a></li>
+                <li><a href="projetos.html">Cursos e Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
         
         <section class="content">
             <div class="row">
-                <section class="col-2-3">
+                <section class="col-2-3 col-md-1-1">
                     <h2 class="left-text">
-                        <a href="noticias.html">
-                            <i class="fa fa-newspaper-o"></i> Últimas novidades
-                        </a>
+                            <i class="fa fa-newspaper-o"></i> Destaques
                     </h2>
                     <div id="slider">
                         <img style="max-width:100%" src="http://placehold.it/960x400/efefef">
                     </div>
                 </section>
-                <section class="col-1-3">
+                <section class="col-1-3 col-md-1-1">
                     <h2><i class="fa fa-star"></i> Links Importantes</h2>
                     <ul class="margin-horizontal">
                         <li><a href="http://pet.inf.ufpr.br/farol/">Farol - Repositório de Provas</a></li>
@@ -108,120 +47,88 @@
                     </ul>
                 </section>
             </div>
-            <article id="sobre-nos" class="justify-text section">
-                <h1 class="center-text">Sobre nós</h1>
-                <p>O PET Computação da Universidade Federal do Paraná foi criado
-                em abril de 1992 após uma solicitação à CAPES, segunda a qual o 
-                curso já dispunha de recursos suficientes e objetivos promissores
-                que realmente justificavam a implantação do grupo.</p>
-                <p>Inicialmente denominado PET Informática, devido ao antigo 
-                nome do curso de graduação ao qual pertence, foi designada a 
-                professora Mírian Halfeld Ferrari Alves como tutora. O grupo 
-                inicialmente constava de quatro bolsistas: Helena Noriko Yamamura, 
-                João Alberto Fabro, Mauro Yukio Washimi e Wellington Camargo.</p>
-                <p><a href="#">Leia mais</a></p>
-            </article>
-            <section id="membros" class="section center-text">
-                <h1>Membros</h1>
-                <p>Tutor do grupo: Luís Allan</p>
-                <div>
-                    <div class="membro one-third">
-                        <span class="nome">Membro A</span>
-                        <span class="curso">IBM</span>
-                        <a href="" tooltip="Link para página do dinf, e-mail, github, gitlab, projeto, flogão, orkut, lattes">
-                            Link pessoal/contato
-                        </a>
+            <section class="post-list">
+                <h2>Notícias mais recentes</h2>
+                <article class="post section row">
+                    <img class="col-1-4" src="http://placehold.it/400x400/efefef">
+                    <div class="col-3-4">
+                        <h1 class="post-title no-margin">Título</h1>
+                        <span class="post-time">
+                            <a href="post.html">
+                                <i class="fa fa-calendar"></i> 03/04/2015
+                            </a>
+                        </span>
+                        <div class="post-content">
+                            <p>
+                                Mussum ipsum cacilds, vidis litro abertis. Consetis 
+                            adipiscings elitis. Pra lá , depois divoltis porris, 
+                            paradis. Paisis, filhis, espiritis santis. Mé faiz 
+                            elementum girarzis, nisi eros vermeio, in elementis mé 
+                            pra quem é amistosis quis leo. Manduma pindureta quium 
+                            dia nois paga. Sapien in monti palavris qui num significa 
+                            nadis i pareci latim. Interessantiss quisso pudia ce 
+                            receita de bolis, mais bolis eu num gostis.
+                                <a href="post.html">Leia mais...</a>
+                            </p>
+                        </div>
                     </div>
-                    <div class="membro one-third">
-                        <span class="nome">Membro B</span>
-                        <span class="curso">BCC</span>
-                        <a href="" tooltip="Link para página do dinf, e-mail, github, gitlab, projeto, flogão, orkut, lattes">
-                            Link pessoal/contato
-                        </a>
+                </article>
+                <article class="post section row">
+                    <img class="col-1-4" src="http://placehold.it/400x400/efefef">
+                    <div class="col-3-4">
+                        <h1 class="post-title no-margin">Título</h1>
+                        <span class="post-time">
+                            <a href="post.html">
+                                <i class="fa fa-calendar"></i> 03/04/2015
+                            </a>
+                        </span>
+                        <div class="post-content">
+                            <p>
+                                Mussum ipsum cacilds, vidis litro abertis. Consetis 
+                            adipiscings elitis. Pra lá , depois divoltis porris, 
+                            paradis. Paisis, filhis, espiritis santis. Mé faiz 
+                            elementum girarzis, nisi eros vermeio, in elementis mé 
+                            pra quem é amistosis quis leo. Manduma pindureta quium 
+                            dia nois paga. Sapien in monti palavris qui num significa 
+                            nadis i pareci latim. Interessantiss quisso pudia ce 
+                            receita de bolis, mais bolis eu num gostis.
+                                <a href="post.html">Leia mais...</a>
+                            </p>
+                        </div>
                     </div>
-                    <div class="membro one-third">
-                        <span class="nome">Membro C</span>
-                        <span class="curso">BCC</span>
-                        <a href="" tooltip="Link para página do dinf, e-mail, github, gitlab, projeto, flogão, orkut, lattes">
-                            Link pessoal/contato
-                        </a>
+                </article>
+                <article class="post section row">
+                    <img class="col-1-4" src="http://placehold.it/400x400/efefef">
+                    <div class="col-3-4">
+                        <h1 class="post-title no-margin">Título</h1>
+                        <span class="post-time">
+                            <a href="post.html">
+                                <i class="fa fa-calendar"></i> 03/04/2015
+                            </a>
+                        </span>
+                        <div class="post-content">
+                            <p>
+                                Mussum ipsum cacilds, vidis litro abertis. Consetis 
+                            adipiscings elitis. Pra lá , depois divoltis porris, 
+                            paradis. Paisis, filhis, espiritis santis. Mé faiz 
+                            elementum girarzis, nisi eros vermeio, in elementis mé 
+                            pra quem é amistosis quis leo. Manduma pindureta quium 
+                            dia nois paga. Sapien in monti palavris qui num significa 
+                            nadis i pareci latim. Interessantiss quisso pudia ce 
+                            receita de bolis, mais bolis eu num gostis.
+                                <a href="post.html">Leia mais...</a>
+                            </p>
+                        </div>
                     </div>
-                    <div class="membro one-third">
-                        <span class="nome">Membro D</span>
-                        <span class="curso">IBM</span>
-                        <a href="" tooltip="Link para página do dinf, e-mail, github, gitlab, projeto, flogão, orkut, lattes">
-                            Link pessoal/contato
-                        </a>
-                    </div>
-                    <div class="membro one-third">
-                        <span class="nome">Membro E</span>
-                        <span class="curso">IBM</span>
-                        <a href="" tooltip="Link para página do dinf, e-mail, github, gitlab, projeto, flogão, orkut, lattes">
-                            Link pessoal/contato
-                        </a>
-                    </div>
-                    <div class="membro one-third">
-                        <span class="nome">Membro F</span>
-                        <span class="curso">BCC</span>
-                        <a href="" tooltip="Link para página do dinf, e-mail, github, gitlab, projeto, flogão, orkut, lattes">
-                            Link pessoal/contato
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section id="projetos" class="section">
-                <h1 class="center-text">Projetos e Cursos</h1>
-                <article class="left-text">
-                    <p class="center-text">
-                        As atividades do PET Computação são divididas em 
-                        <strong tooltip="Alguns dizem que são mais...">três</strong> 
-                        eixos:
-                    </p>
-                    <div class="one-third vertical-top">
-                        <h2>Pesquisa:</h2>
-                        <ul>
-                            <li><a href="projeto.html">Cartão do R.U.</a></li>
-                            <li><a href="projeto.html">Fisiologia Digital</a></li>
-                            <li><a href="projeto.html">Geolocalização</a></li>
-                            <li><a href="projeto.html">J.A.R.V.I.S.</a></li>
-                            <li><a href="projeto.html">Jogo para Apoio Psicológico</a></li>
-                            <li><a href="projeto.html">Trajetória de Organelas</a></li>
-                        </ul>
-                    </div>
-                    <div class="one-third vertical-top">
-                        <h2>Ensino:</h2>
-                        <ul>
-                            <li><a href="projeto.html">A.D.E.G.A.</a></li>
-                            <li><a href="curso.html">Curso de Git</a></li>
-                            <li><a href="curso.html">Curso de LaTeX</a></li>
-                            <li><a href="curso.html">Curso de Linux</a></li>
-                            <li><a href="curso.html">Curso de ShellScript</a></li>
-                            <li><a href="curso.html">Seminários</a></li>
-                        </ul>
-                    </div>
-                    <div class="one-third vertical-top">
-                        <h2>Extensão:</h2>
-                        <ul>
-                            <li><a href="curso.html">Curso de Informática para Imigrantes</a></li>
-                            <li><a href="projeto.html">InterPET nas Escolas</a></li>
-                            <li><a href="projeto.html">Oficina de Vestibulandos</a></li>
-                        </ul>
-                    </div>
-                    <p class="center-text">Veja também nossos <a href="">projetos antigos</a>.</p>
                 </article>
             </section>
-            <section id="contato" class="margin-vertical left-text section">
-                <h1 class="center-text">Contato</h1>
-                <p>Email: pet@inf.ufpr.br</p>
-                <p>O PET Computação fica localizado no prédio da administração,
-                na frente do caixa automático do Itaú e próximo a passarela da 
-                biblioteca.</p>
-                <div id="map-canvas"></div>
-                <div class="fb-like margin-vertical" data-href="https://www.facebook.com/petcompufpr" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
-            </section>
+            <div class="text-right">
+                <a class="button-dark" href=""><i class="fa fa-chevron-left"></i> Anterior</a>
+                <a class="button-dark" href="">Próxima <i class="fa fa-chevron-right"></i></a>
+            </div>
         </section>
-        <footer class="center-text padding-vertical">
-            <p>PET Computação UFPR - Desde 1992 <br/> &copy 2015</p>
+        <footer class="text-center padding-vertical dark">
+            <p>PET Computação UFPR - desde 1992 <br/> &copy 2015</p>
         </footer>
     </body>
 </html>

@@ -12,6 +12,7 @@
 	&:hover{
 		cursor: pointer;
 		background-color: lighten($stable, 5%);
+    	text-decoration: none;
 	}
 	&:active{
         background-color: darken($stable, 10%);

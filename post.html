@@ -29,61 +29,25 @@
             header a:hover{
                 text-decoration: underline;
             }
-            .navbar-dark .brand:hover{
-                color: #EC7149;
-            }
-            .navbar-dark ul li:hover > a{
-                background: #EC7149;
-            }
-            .navbar-dark ul li ul{
-                background: #EC7149;
-                box-shadow: inset 1px 1px 5px #EC7149;
-            }
-            .navbar-dark ul li ul li:hover{
-                background: #F19577;
-            }
         </style>
     </head>
     <body>
-        <nav class="navbar-dark navbar-extended">
-            <h1><a href="pet.html" class="brand">PET Computação ufpr</a></h1>
-            <ul class="nav-right all-caps">
-                <li><a href="#sobre-nos">Sobre nós</a></li>
-                <li><a href="#membros">Membros</a></li>
-                <li>
-                    <a href="pet.html#projetos">Cursos</a>
-                    <ul>
-                        <li><a href="curso.html">Curso de Informática para Imigrantes</a></li>
-                        <li><a href="curso.html">Curso de Git</a></li>
-                        <li><a href="curso.html">Curso de LaTeX</a></li>
-                        <li><a href="curso.html">Curso de Linux</a></li>
-                        <li><a href="curso.html">Curso de ShellScript</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="pet.html#projetos">Projetos</a>
-                    <ul>
-                        <li><a href="projeto.html">A.D.E.G.A.</a></li>
-                        <li><a href="projeto.html">Cartão do R.U.</a></li>
-                        <li><a href="projeto.html">Fisiologia Digital</a></li>
-                        <li><a href="projeto.html">Geolocalização</a></li>
-                        <li><a href="projeto.html">Grupos de estudo</a></li>
-                        <li><a href="projeto.html">InterPET nas Escolas</a></li>
-                        <li><a href="projeto.html">J.A.R.V.I.S.</a></li>
-                        <li><a href="projeto.html">Jogo para apoio psicológico</a></li>
-                        <li><a href="projeto.html">Oficina de Vestibulandos</a></li>
-                        <li><a href="projeto.html">Trajetória de Organelas</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="noticias.html">Notícias</a></li>
+        <nav class="navbar-energized navbar-extended">
+            <h1 class="no-margin brand"><a href="pet.html">PET Computação ufpr</a></h1>
+            <label for="toggle" class="menu-toggle" onclick></label>
+            <input type="checkbox" class="menu-toggle" id="toggle"/>
+            <ul class="nav-itens all-caps">
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="membros.html">Membros</a></li>
+                <li><a href="projetos.html">Cursos e Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-        <header class="header energized">
+        <header class="header energized padding-vertical">
             <div>
-                <a href="noticias.html"><i class="fa fa-chevron-left"></i> Voltar</a>
+                <a href="pet.html"><i class="fa fa-chevron-left"></i> Voltar</a>
             </div>
-            <div class="center-block center-text" style="color:white">
+            <div class="center-block text-center" style="color:white">
                 <h1 class="logo">Título</h1>
                 <h3>Subtítulo</h3>
                 <span class="post-time">Postado 03/04/2015, às 15h34</span>
@@ -111,7 +75,7 @@
                 </div>
             </article>
         </section>
-        <footer class="center-text padding-vertical dark">
+        <footer class="text-center padding-vertical dark">
             <p>PET Computação UFPR - Desde 1992 <br/> &copy 2015</p>
         </footer>
     </body>

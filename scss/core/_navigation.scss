@@ -4,8 +4,11 @@
     position: relative;
     padding: 0;
     color: $red;
-    box-shadow: 0 1px 3px $dark;
     font-size: 90%;
+    
+    a{
+        color: inherit;
+    }
     
     .brand{
         @extend .all-caps;
@@ -18,7 +21,7 @@
         letter-spacing: 5px;
         padding: $padding;
         
-        &:hover{
+        &:hover, &:hover > a{
             color: $dark;
             text-decoration: none;
         }
@@ -30,7 +33,7 @@
         }
     }
     
-    h1 > a.brand{
+    h1.brand{
         padding: $padding $padding 0 $padding !important;
     }
 }
@@ -72,7 +75,9 @@ label.menu-toggle{
     @extend .center-block;
     list-style: none;
     z-index: 10;
-    .brand ~ &{
+    .brand ~ &, h1 ~ &{
+        position: relative;
+        right: 0;
         float: right;
     }
     li{
@@ -122,7 +127,7 @@ label.menu-toggle{
     color: white;
     ul{
         li{
-            &:hover > a{
+            &:hover, &:hover > a{
                 background: $dark;
                 color: $positive;
             }
@@ -130,16 +135,46 @@ label.menu-toggle{
     }
     
     .brand{
-        &:hover{
+        color: white;
+        &:hover, &:hover a{
             color: $dark;
         }
     }
     @include breakpoint(medium){
         .menu-toggle:after{
-            background: $dark !important;
+            background: $dark;
         }
         .menu-toggle:checked ~ .nav-itens{
             background: $positive !important;
+        }
+    }
+}
+
+.navbar-calm{
+    @extend .navbar;
+    @extend .calm;
+    color: white;
+    ul{
+        li{
+            &:hover, &:hover > a{
+                background: white;
+                color: $calm;
+            }
+        }
+    }
+    
+    .brand{
+        color: white;
+        &:hover, &:hover a{
+            color: $dark;
+        }
+    }
+    @include breakpoint(medium){
+        .menu-toggle:after{
+            background: $dark;
+        }
+        .menu-toggle:checked ~ .nav-itens{
+            background: $calm !important;
         }
     }
 }
@@ -171,14 +206,14 @@ label.menu-toggle{
     
     .brand{
         color: white;
-        &:hover{
+        &:hover, &:hover > a{
             color: $positive;
         }
     }
     
     @include breakpoint(medium){
         .menu-toggle:after{
-            background: $positive !important;
+            background: $positive;
         }
         .menu-toggle:checked ~ .nav-itens{
             background: $dark !important;

@@ -22,5 +22,11 @@
             border: none;
             font-weight: bold;
         }
+        .post-content{
+            //white-space: nowrap;
+            @extend .ellipsis;
+            overflow: hidden;
+            max-width: 100%;
+        }
     }
 }

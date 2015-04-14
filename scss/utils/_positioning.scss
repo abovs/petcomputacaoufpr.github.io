@@ -47,6 +47,7 @@
 }
 
 .center-block{
+    @extend %box-size;
     display: table;
     margin: 0 auto;
 }

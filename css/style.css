@@ -8,12 +8,12 @@
 * @include breakpoint(medium){width: 66%}
 * @include breakpoint(small){width: 33%}
 */
-.row:after, .alert:after, .notice:after, .success:after, .warning:after, .error:after, .navbar:after, .navbar-positive:after, .navbar-energized:after, .navbar-dark:after, .nav-itens:after, .row:before, .alert:before, .notice:before, .success:before, .warning:before, .error:before, .navbar:before, .navbar-positive:before, .navbar-energized:before, .navbar-dark:before, .nav-itens:before {
+.row:after, .alert:after, .notice:after, .success:after, .warning:after, .error:after, .navbar:after, .navbar-positive:after, .navbar-calm:after, .navbar-energized:after, .navbar-dark:after, .nav-itens:after, .row:before, .alert:before, .notice:before, .success:before, .warning:before, .error:before, .navbar:before, .navbar-positive:before, .navbar-calm:before, .navbar-energized:before, .navbar-dark:before, .nav-itens:before {
   display: block;
   clear: both;
   content: ''; }
 
-[class^="col-"], .button, .button-positive, .button-primary, .button-calm, .button-secondary, .button-energized, .button-red, .button-error, .button-dark, .button-facebook, button, .alert, .notice, .success, .warning, .error, .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand {
+[class^="col-"], .center-block, .nav-itens, .button, .button-positive, .button-primary, .button-calm, .button-secondary, .button-energized, .button-red, .button-error, .button-dark, .button-facebook, button, .alert, .notice, .success, .warning, .error, .navbar .brand, .navbar-positive .brand, .navbar-calm .brand, .navbar-energized .brand, .navbar-dark .brand {
   box-sizing: border-box; }
 
 .row + .row {
@@ -327,7 +327,7 @@
 .margin {
   margin: 20px; }
 
-.no-margin, .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand {
+.no-margin, .navbar .brand, .navbar-positive .brand, .navbar-calm .brand, .navbar-energized .brand, .navbar-dark .brand {
   margin: 0; }
 
 .margin-vertical {
@@ -371,10 +371,10 @@
 .bg-light, .light {
   background-color: whitesmoke; }
 
-.color-light, .positive, .button-positive, .button-primary, .success, .navbar-positive, .calm, .button-calm, .button-secondary, .notice, .energized, .button-energized, .warning, .navbar-energized, .red, .button-red, .button-error, .error, .dark, .button-dark, .navbar-dark, .button-facebook {
+.color-light, .positive, .button-positive, .button-primary, .success, .navbar-positive, .calm, .button-calm, .button-secondary, .notice, .navbar-calm, .energized, .button-energized, .warning, .navbar-energized, .red, .button-red, .button-error, .error, .dark, .button-dark, .navbar-dark, .button-facebook {
   color: whitesmoke; }
 
-.bg-stable, .stable, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, .button, .button-positive, .button-primary, .button-calm, .button-secondary, .button-energized, .button-red, .button-error, .button-dark, .button-facebook, button {
+.bg-stable, .stable, .navbar, .navbar-positive, .navbar-calm, .navbar-energized, .navbar-dark, .button, .button-positive, .button-primary, .button-calm, .button-secondary, .button-energized, .button-red, .button-error, .button-dark, .button-facebook, button {
   background-color: #DCD6D8; }
 
 .color-stable {
@@ -386,7 +386,7 @@
 .color-positive {
   color: #55CB7C; }
 
-.bg-calm, .calm, .button-calm, .button-secondary, .notice {
+.bg-calm, .calm, .button-calm, .button-secondary, .notice, .navbar-calm {
   background-color: #99CDC4; }
 
 .color-calm {
@@ -401,7 +401,7 @@
 .bg-dark, .dark, .button-dark, .navbar-dark {
   background-color: #1D1C22; }
 
-.color-dark, .light, .stable, .navbar, .navbar-positive, .navbar-energized, .navbar-dark, body {
+.color-dark, .light, .stable, .navbar, .navbar-positive, .navbar-calm, .navbar-energized, .navbar-dark, body {
   color: #1D1C22; }
 
 .bg-red, .red, .button-red, .button-error, .error {
@@ -413,7 +413,7 @@
 .bg-no-color {
   background-color: white; }
 
-.ellipsis {
+.ellipsis, .post-list .post .post-content {
   text-overflow: ellipsis; }
 
 .text-center {
@@ -428,7 +428,7 @@
 .text-justify, .post .post-content {
   text-align: justify; }
 
-.all-caps, .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand, .logo {
+.all-caps, .navbar .brand, .navbar-positive .brand, .navbar-calm .brand, .navbar-energized .brand, .navbar-dark .brand, .logo {
   text-transform: uppercase; }
 
 body {
@@ -589,7 +589,8 @@ fieldset {
   transition: background-color 0.2s ease; }
   .button:hover, .button-positive:hover, .button-primary:hover, .button-calm:hover, .button-secondary:hover, .button-energized:hover, .button-red:hover, .button-error:hover, .button-dark:hover, .button-facebook:hover, button:hover {
     cursor: pointer;
-    background-color: #e8e4e5; }
+    background-color: #e8e4e5;
+    text-decoration: none; }
   .button:active, .button-positive:active, .button-primary:active, .button-calm:active, .button-secondary:active, .button-energized:active, .button-red:active, .button-error:active, .button-dark:active, .button-facebook:active, button:active {
     background-color: #c5babe; }
   .button:focus, .button-positive:focus, .button-primary:focus, .button-calm:focus, .button-secondary:focus, .button-energized:focus, .button-red:focus, .button-error:focus, .button-dark:focus, .button-facebook:focus, button:focus {
@@ -766,28 +767,29 @@ input.warn {
     visibility: visible;
     opacity: 1; }
 
-.navbar, .navbar-positive, .navbar-energized, .navbar-dark {
+.navbar, .navbar-positive, .navbar-calm, .navbar-energized, .navbar-dark {
   position: relative;
   padding: 0;
   color: #9b2929;
-  box-shadow: 0 1px 3px #1D1C22;
   font-size: 90%; }
-  .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand {
+  .navbar a, .navbar-positive a, .navbar-calm a, .navbar-energized a, .navbar-dark a {
+    color: inherit; }
+  .navbar .brand, .navbar-positive .brand, .navbar-calm .brand, .navbar-energized .brand, .navbar-dark .brand {
     color: inherit;
     position: relative;
     float: left;
     font-weight: 100;
     letter-spacing: 5px;
     padding: 20px; }
-    .navbar .brand:hover, .navbar-positive .brand:hover, .navbar-energized .brand:hover, .navbar-dark .brand:hover {
+    .navbar .brand:hover, .navbar-positive .brand:hover, .navbar-calm .brand:hover, .navbar-energized .brand:hover, .navbar-dark .brand:hover, .navbar .brand:hover > a, .navbar-positive .brand:hover > a, .navbar-calm .brand:hover > a, .navbar-energized .brand:hover > a, .navbar-dark .brand:hover > a {
       color: #1D1C22;
       text-decoration: none; }
     @media screen and (max-width: 55em) {
-      .navbar .brand, .navbar-positive .brand, .navbar-energized .brand, .navbar-dark .brand {
+      .navbar .brand, .navbar-positive .brand, .navbar-calm .brand, .navbar-energized .brand, .navbar-dark .brand {
         position: relative;
         display: block;
         float: left; } }
-  .navbar h1 > a.brand, .navbar-positive h1 > a.brand, .navbar-energized h1 > a.brand, .navbar-dark h1 > a.brand {
+  .navbar h1.brand, .navbar-positive h1.brand, .navbar-calm h1.brand, .navbar-energized h1.brand, .navbar-dark h1.brand {
     padding: 20px 20px 0 20px !important; }
 
 .menu-toggle {
@@ -820,7 +822,9 @@ input.warn {
 .nav-itens {
   list-style: none;
   z-index: 10; }
-  .brand ~ .nav-itens {
+  .brand ~ .nav-itens, h1 ~ .nav-itens {
+    position: relative;
+    right: 0;
     float: right; }
   .nav-itens li {
     display: inline-block;
@@ -857,16 +861,33 @@ input.warn {
 
 .navbar-positive {
   color: white; }
-  .navbar-positive ul li:hover > a {
+  .navbar-positive ul li:hover, .navbar-positive ul li:hover > a {
     background: #1D1C22;
     color: #55CB7C; }
-  .navbar-positive .brand:hover {
-    color: #1D1C22; }
+  .navbar-positive .brand {
+    color: white; }
+    .navbar-positive .brand:hover, .navbar-positive .brand:hover a {
+      color: #1D1C22; }
   @media screen and (max-width: 55em) {
     .navbar-positive .menu-toggle:after {
-      background: #1D1C22 !important; }
+      background: #1D1C22; }
     .navbar-positive .menu-toggle:checked ~ .nav-itens {
       background: #55CB7C !important; } }
+
+.navbar-calm {
+  color: white; }
+  .navbar-calm ul li:hover, .navbar-calm ul li:hover > a {
+    background: white;
+    color: #99CDC4; }
+  .navbar-calm .brand {
+    color: white; }
+    .navbar-calm .brand:hover, .navbar-calm .brand:hover a {
+      color: #1D1C22; }
+  @media screen and (max-width: 55em) {
+    .navbar-calm .menu-toggle:after {
+      background: #1D1C22; }
+    .navbar-calm .menu-toggle:checked ~ .nav-itens {
+      background: #99CDC4 !important; } }
 
 @media screen and (max-width: 55em) {
   .navbar-energized .menu-toggle:checked ~ .nav-itens {
@@ -879,11 +900,11 @@ input.warn {
   color: #1D1C22; }
 .navbar-dark .brand {
   color: white; }
-  .navbar-dark .brand:hover {
+  .navbar-dark .brand:hover, .navbar-dark .brand:hover > a {
     color: #55CB7C; }
 @media screen and (max-width: 55em) {
   .navbar-dark .menu-toggle:after {
-    background: #55CB7C !important; }
+    background: #55CB7C; }
   .navbar-dark .menu-toggle:checked ~ .nav-itens {
     background: #1D1C22 !important; } }
 
@@ -907,6 +928,9 @@ select {
 .post-list .post .post-title {
   border: none;
   font-weight: bold; }
+.post-list .post .post-content {
+  overflow: hidden;
+  max-width: 100%; }
 
 .section {
   padding-bottom: 20px;
@@ -920,9 +944,13 @@ select {
   font-size: 4.5em; }
 
 .content {
-  padding: 0 10% 140px 10%; }
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 140px; }
   @media screen and (max-width: 55em) {
     .content {
-      padding: 0 5% 20px 5%; } }
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
