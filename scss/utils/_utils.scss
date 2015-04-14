@@ -1,0 +1,13 @@
+//--------------------------UTILS-----------------------------------------------
+//Utils são ferramentas e facilidades
+
+//--------------------------Variáveis-------------------------------------------
+$row-spacing: 2%;
+$col-spacing: 1%;
+$padding: 20px;        //padding default
+$margin: 20px;        //margin default
+
+//--------------------------Imports---------------------------------------------
+@import "mixins";            //Funções e extends
+@import "grid";              //Grid de 12 colunas responsivo
+@import "positioning";       //

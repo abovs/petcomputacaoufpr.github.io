@@ -1,6 +1,3 @@
-$padding: 20px;
-$margin: 20px;
-
 .float-right{
 	float: right;
 }
@@ -45,22 +42,6 @@ $margin: 20px;
     padding-right: $padding;
 }
 
-.center-text{
-    text-align: center;
-}
-
-.left-text{
-    text-align: left;
-}
-
-.right-text{
-    text-align: right;
-}
-
-.justify-text{
-    text-align: justify;
-}
-
 .center-vertical{
     margin: auto 0 auto 0;
 }
@@ -80,42 +61,4 @@ $margin: 20px;
 
 .vertical-bottom{
     vertical-align: bottom;
-}
-
-.inline-block{
-    display: inline-block;
-}
-
-.full{
-    @extend .inline-block;
-    width: 100%;
-}
-
-.half{
-    @extend .inline-block;
-    width: 49%;
-}
-
-.one-third{
-    @extend .inline-block;
-    width: 33%;
-}
-
-.one-third-max{
-    max-width: 33%;
-}
-
-.two-thirds{
-    @extend .inline-block;
-    width: 66%;
-}
-
-.one-quarter{
-    @extend .inline-block;
-    width: 24%;
-}
-
-.three-quarters{
-    @extend .inline-block;
-    width: 74%;
 }

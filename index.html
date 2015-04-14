@@ -8,22 +8,18 @@
     </head>
     <body>
         <header>
-            <h1 class="logo center-text" id="logo">PET css</h1>
+            <h1 class="logo text-center" id="logo">PET css</h1>
             <nav class="navbar">
-                <ul>
+                <label for="toggle" class="menu-toggle" onclick></label>
+                <input type="checkbox" class="menu-toggle" id="toggle"/>
+                <ul class="nav-itens">
                     <li><a href="#buttons">Botões</a></li>
                     <li><a href="#menus">Menus e navegação</a></li>
                     <li><a href="#inputs">Inputs e Formulários</a></li>
                     <li><a href="#alerts">Alertas</a></li>
                     <li><a href="#headers">Cabeçalhos</a></li>
                     <li><a href="#tooltips">Tooltips</a></li>
-                    <li>
-                        <a href="#exemplos">Exemplos</a>
-                        <ul>
-                            <li><a href="#post">Blog Post</a></li>
-                            <li><a href="pet.html">Mockup PET</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#exemplos">Exemplos</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,58 +27,53 @@
             <h1>Elementos Básicos</h1>
             <section class="section" id="grid">
                 <h2>Grid</h2>
-                <div class="row center-text">
+                <div class="row text-center">
                     <div class="col-1-12 stable">col 1/12</div>
                     <div class="col-11-12 stable">col 11/12</div>
                 </div>
-                <div class="row center-text">
+                <div class="row text-center">
                     <div class="col-1-6 stable">col 2/12</div>
                     <div class="col-5-6 stable">col 10/12</div>
                 </div>
-                <div class="row center-text">
+                <div class="row text-center">
                     <div class="col-1-4 stable">col 3/12</div>
                     <div class="col-3-4 stable">col 9/12</div>
                 </div>
-                <div class="row center-text">
+                <div class="row text-center">
                     <div class="col-1-3 stable">col 4/12</div>
                     <div class="col-2-3 stable">col 8/12</div>
                 </div>
-                <div class="row center-text">
+                <div class="row text-center">
                     <div class="col-5-12 stable">col 5/12</div>
                     <div class="col-7-12 stable">col 7/12</div>
                 </div>
-                <div class="row center-text">
+                <div class="row text-center">
                     <div class="col-1-2 stable">col 6/12</div>
                     <div class="col-1-2 stable">col 6/12</div>
-                </div>
-                <p>O grid pode ser responsivo</p>
-                <div class="row center-text">
-                    <div class="col-1-1 col-lg-1-2 stable margin-vertical">Col</div>
-                    <div class="col-1-1 col-lg-1-2 stable margin-vertical">Col</div>
                 </div>
             </section>
             <section id="buttons" class="section">
                 <h2>Botões</h2>
-                <button class="button button-small">Botão Simples</button>
-                <button class="button-positive button-small">Botão Positivo</button>
-                <button class="button-calm button-small">Botão Calmo</button>
-                <button class="button-energized button-small">Botão Energizado</button>
-                <button class="button-red button-small">BotãERROR</button>
-                <button class="button-dark button-small">Botão Escuro</button>
+                <button class="button button-small">Simples</button>
+                <button class="button-positive button-small">Positivo</button>
+                <button class="button-calm button-small">Calmo</button>
+                <button class="button-energized button-small">Energizado</button>
+                <button class="button-red button-small">ERROR</button>
+                <button class="button-dark button-small">Escuro</button>
                 <br/>
-                <button class="button">Botão Simples</button>
-                <button class="button-positive">Botão Positivo</button>
-                <button class="button-calm">Botão Calmo</button>
-                <button class="button-energized">Botão Energizado</button>
-                <button class="button-red">BotãERROR</button>
-                <button class="button-dark">Botão Escuro</button>
+                <button class="button">Simples</button>
+                <button class="button-positive">Positivo</button>
+                <button class="button-calm">Calmo</button>
+                <button class="button-energized">Energizado</button>
+                <button class="button-red">ERROR</button>
+                <button class="button-dark">Escuro</button>
                 <br/>
-                <button class="button button-large">Botão Simples</button>
-                <button class="button-positive button-large">Botão Positivo</button>
-                <button class="button-calm button-large">Botão Calmo</button>
-                <button class="button-energized button-large">Botão Energizado</button>
-                <button class="button-red button-large">BotãERROR</button>
-                <button class="button-dark button-large">Botão Escuro</button>
+                <button class="button button-large">Simples</button>
+                <button class="button-positive button-large">Positivo</button>
+                <button class="button-calm button-large">Calmo</button>
+                <button class="button-energized button-large">Energizado</button>
+                <button class="button-red button-large">ERROR</button>
+                <button class="button-dark button-large">Escuro</button>
                 <br/>
                 <button class="button-facebook"><i class="fa fa-facebook fa-2x fa-fw"></i></button>
                 <button class="button-dark button-icon"><i class="fa fa-github fa-2x fa-fw"></i></button>
@@ -92,61 +83,45 @@
                 <h2>Menus e navegação</h2>
                 <nav class="navbar">
                     <a href="#logo" class="brand">Pet css</a>
-                    <ul class="nav-right">
+                    <label for="toggle-1" class="menu-toggle" onclick></label>
+                    <input type="checkbox" class="menu-toggle" id="toggle-1"/>
+                    <ul class="nav-itens">
                         <li><a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a></li>
                         <li><a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a></li>
-                        <li>
-                            <a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a>
-                            <ul>
-                                <li><a href="http://www.inf.ufpr.br/bcc/" target="_blank">Ciência da Computação</a></li>
-                                <li><a href="http://www.inf.ufpr.br/infobiomedica/" target="_blank">Informática Biomédica</a></li>
-                            </ul>
-                        </li>
+                        <li><a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a></li>
                     </ul>
                 </nav>
                 <br/>
                 <nav class="navbar-positive">
                     <a href="#logo" class="brand">Pet css</a>
-                    <ul class="nav-right">
+                    <label for="toggle-2" class="menu-toggle" onclick></label>
+                    <input type="checkbox" class="menu-toggle" id="toggle-2"/>
+                    <ul class="nav-itens">
                         <li><a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a></li>
                         <li><a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a></li>
-                        <li>
-                            <a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a>
-                            <ul>
-                                <li><a href="http://www.inf.ufpr.br/bcc/" target="_blank">Ciência da Computação</a></li>
-                                <li><a href="http://www.inf.ufpr.br/infobiomedica/" target="_blank">Informática Biomédica</a></li>
-                            </ul>
-                        </li>
+                        <li><a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a></li>
                     </ul>
                 </nav>
                 <br/>
                 <nav class="navbar-energized">
                     <a href="#logo" class="brand">Pet css</a>
-                    <ul class="nav-right">
+                    <label for="toggle-3" class="menu-toggle" onclick></label>
+                    <input type="checkbox" class="menu-toggle" id="toggle-3"/>
+                    <ul class="nav-itens">
                         <li><a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a></li>
                         <li><a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a></li>
-                        <li>
-                            <a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a>
-                            <ul>
-                                <li><a href="http://www.inf.ufpr.br/bcc/" target="_blank">Ciência da Computação</a></li>
-                                <li><a href="http://www.inf.ufpr.br/infobiomedica/" target="_blank">Informática Biomédica</a></li>
-                            </ul>
-                        </li>
+                        <li><a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a></li>
                     </ul>
                 </nav>
                 <br/>
                 <nav class="navbar-dark">
                     <a href="#logo" class="brand">Pet css</a>
-                    <ul class="nav-right">
+                    <label for="toggle-4" class="menu-toggle" onclick></label>
+                    <input type="checkbox" class="menu-toggle" id="toggle-4"/>
+                    <ul class="nav-itens">
                         <li><a target="_blank" href="http://pet.inf.ufpr.br">PET Computação UFPR</a></li>
                         <li><a target="_blank" href="http://pet.inf.ufpr.br/farol/">Farol</a></li>
-                        <li>
-                            <a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a>
-                            <ul>
-                                <li><a href="http://www.inf.ufpr.br/bcc/" target="_blank">Ciência da Computação</a></li>
-                                <li><a href="http://www.inf.ufpr.br/infobiomedica/" target="_blank">Informática Biomédica</a></li>
-                            </ul>
-                        </li>
+                        <li><a target="_blank" href="http://www.inf.ufpr.br/">Dinf UFPR</a></li>
                     </ul>
                 </nav>
                 <br/>
@@ -213,8 +188,8 @@
                     <span class="alert-close"><button><i class="fa fa-close fa-lg"></i></button></span>
                 </div>
             </section>
-            <div class="full">
-                <div id="headers" class="half vertical-top">
+            <div class="row">
+                <div id="headers" class="col-1-2">
                     <h2>Cabeçalhos</h2>
                     <h1>Header 1</h1>
                     <h2>Header 2</h2>
@@ -223,7 +198,7 @@
                     <h5>Header 5</h5>
                     <h6>Header 6</h6>
                 </div>
-                <div id="tooltips" class="half vertical-top">
+                <div id="tooltips" class="col-1-2">
                     <h2>Tooltips</h2>
                     <a href="#" tooltip="Isso é uma tooltip">Passe o mouse</a>
                     <br/>
@@ -231,7 +206,7 @@
                 </div>
             </div>
         </section>
-        <section id="exemplos" class="content margin-vertical">
+        <section id="exemplos" class="content">
             <h1>Exemplos</h1>
             <section id="post" class="section">
                 <h2>Blog Post</h2>
@@ -253,7 +228,7 @@
                 </article>
             </section>
         </section>
-        <footer class="center-text padding-vertical">
+        <footer class="text-center padding-vertical">
             <p><a href="http://pet.inf.ufpr.br">PET Computação UFPR</a> <br/> &copy 2015</p>
         </footer>
     </body>

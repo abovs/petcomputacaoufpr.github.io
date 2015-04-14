@@ -69,64 +69,45 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
         
-        <nav class="navbar-extended">
-            <h1><a href="#" class="brand">PET Computação ufpr</a></h1>
-            <ul class="nav-right all-caps">
+        <nav class="navbar-dark navbar-extended">
+            <h1 class="no-margin"><a href="#" class="brand">PET Computação ufpr</a></h1>
+            <label for="toggle" class="menu-toggle" onclick></label>
+            <input type="checkbox" class="menu-toggle" id="toggle"/>
+            <ul class="nav-itens all-caps">
                 <li><a href="#sobre-nos">Sobre nós</a></li>
                 <li><a href="#membros">Membros</a></li>
-                <li>
-                    <a href="#projetos">Cursos</a>
-                    <ul>
-                        <li><a href="curso.html">Curso de Informática para Imigrantes</a></li>
-                        <li><a href="curso.html">Curso de Git</a></li>
-                        <li><a href="curso.html">Curso de LaTeX</a></li>
-                        <li><a href="curso.html">Curso de Linux</a></li>
-                        <li><a href="curso.html">Curso de ShellScript</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#projetos">Projetos</a>
-                    <ul>
-                        <li><a href="projeto.html">A.D.E.G.A.</a></li>
-                        <li><a href="projeto.html">Cartão do R.U.</a></li>
-                        <li><a href="projeto.html">Fisiologia Digital</a></li>
-                        <li><a href="projeto.html">Geolocalização</a></li>
-                        <li><a href="projeto.html">Grupos de estudo</a></li>
-                        <li><a href="projeto.html">InterPET nas Escolas</a></li>
-                        <li><a href="projeto.html">J.A.R.V.I.S.</a></li>
-                        <li><a href="projeto.html">Jogo para apoio psicológico</a></li>
-                        <li><a href="projeto.html">Oficina de Vestibulandos</a></li>
-                        <li><a href="projeto.html">Trajetória de Organelas</a></li>
-                    </ul>
-                </li>
+                <li><a href="#projetos">Cursos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="noticias.html">Notícias</a></li>
             </ul>
         </nav>
         
         <section class="content">
-            <section class="three-quarters vertical-top">
-                <h2 class="left-text">
-                    <a href="noticias.html">
-                        <i class="fa fa-newspaper-o"></i> Últimas novidades
-                    </a>
-                </h2>
-                <div id="slider">
-                    <img style="max-width:100%" src="http://placehold.it/960x400/efefef">
-                </div>
-            </section>
-            <section class="one-quarter vertical-top">
-                <h2><i class="fa fa-star"></i> Links Importantes</h2>
-                <ul>
-                    <li><a href="http://pet.inf.ufpr.br/farol/">Farol - Repositório de Provas</a></li>
-                	<li><a href="http://www.inf.ufpr.br/dinf/" target="_blank">Departamento de Informática</a></li>
-                	<li><a href="http://www.engprod.ufpr.br/calendario2014.pdf" target="_blank">Calendário Acadêmico</a></li>
-                	<li><a href="http://www.inf.ufpr.br/dinf/infratecfaqs.html#faq4" target="_blank">Redirecionando seu e-mail DINF</a> </li>
-                	<li><a href="http://code.google.com/p/anotacoes-ufpr/source/browse/#svn%2Ftrunk" target="_blank">Repositório de provas e trabalhos</a></li>
-                	<li><a href="apostilas/" target="_blank">Apostilas do PET Computação</a></li>
-                	<li><a href="http://portaldoaluno.ufpr.br" target="_blank">Portal do Aluno</a></li>
-                </ul>
-            </section>
+            <div class="row">
+                <section class="col-2-3">
+                    <h2 class="left-text">
+                        <a href="noticias.html">
+                            <i class="fa fa-newspaper-o"></i> Últimas novidades
+                        </a>
+                    </h2>
+                    <div id="slider">
+                        <img style="max-width:100%" src="http://placehold.it/960x400/efefef">
+                    </div>
+                </section>
+                <section class="col-1-3">
+                    <h2><i class="fa fa-star"></i> Links Importantes</h2>
+                    <ul class="margin-horizontal">
+                        <li><a href="http://pet.inf.ufpr.br/farol/">Farol - Repositório de Provas</a></li>
+                    	<li><a href="http://www.inf.ufpr.br/dinf/" target="_blank">Departamento de Informática</a></li>
+                    	<li><a href="http://www.engprod.ufpr.br/calendario2014.pdf" target="_blank">Calendário Acadêmico</a></li>
+                    	<li><a href="http://www.inf.ufpr.br/dinf/infratecfaqs.html#faq4" target="_blank">Redirecionando seu e-mail DINF</a> </li>
+                    	<li><a href="http://code.google.com/p/anotacoes-ufpr/source/browse/#svn%2Ftrunk" target="_blank">Repositório de provas e trabalhos</a></li>
+                    	<li><a href="apostilas/" target="_blank">Apostilas do PET Computação</a></li>
+                    	<li><a href="http://portaldoaluno.ufpr.br" target="_blank">Portal do Aluno</a></li>
+                    </ul>
+                </section>
+            </div>
             <article id="sobre-nos" class="justify-text section">
                 <h1 class="center-text">Sobre nós</h1>
                 <p>O PET Computação da Universidade Federal do Paraná foi criado

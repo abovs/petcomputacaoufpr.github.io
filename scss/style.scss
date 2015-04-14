@@ -1,55 +1,26 @@
-//Fonts
+//-----------------------Fonts--------------------------------------------------
 @import url(//fonts.googleapis.com/css?family=Lato:100,300,400);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
 //FontAwesome
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
-//Imports
-@import "mixins";
-@import "grid";
-@import "positioning";
-@import "colors";
-@import "forms";
-@import "buttons";
-@import "alerts";
-@import "tooltips";
-@import "navigation";
-@import "blog";
+//----------------------Imports-------------------------------------------------
+//Utils são ferramentas e facilidades, como posicionamento, grid e mixins
+@import "utils/utils";
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    color: $dark;
-    background: $light;
-    margin: 0;
-    min-height: 100%;
-    position: relative;
-}
+//Core é a base do css: cores, tags html, reset e todos os componentes básicos
+// do kit css
+@import "core/core";
 
-h1, h2, h3, h4, h5, h6{
-   font-family: 'Lato', sans-serif;
-}
-
-h1{
-    font-size: 2em;
-}
+//Widgets são módulos feitos sobre os itens definidos no core, como forms de login
+// publicação de artigo, slider, showcase, etc.
+@import "widgets/widgets";
+@import "widgets/blog";
 
 .section{
     padding-bottom: 20px;
     border-bottom: 1px solid $stable;
     margin-bottom: 20px;
-}
-
-a{
-    color: darken($calm, 20%);
-    text-decoration: none;
-    &:hover{
-        text-decoration: underline;
-        color: darken($calm, 50%);
-    }
-}
-
-.all-caps{
-    text-transform: uppercase;
 }
 
 .logo{
@@ -61,23 +32,8 @@ a{
 }
 
 .content{
-    padding: 0 15% (100px + 2*$padding) 15%;
-}
-
-footer{
-    background-color: $red;
-    color: white;
-    font-weight: 300;
-    font-size: .9em;
-    width: 100%;
-    height: 80px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    a{
-        color: lighten($energized, 15%);
-        &:hover{
-            color: $energized;
-        }
+    padding: 0 10% (100px + 2*$padding) 10%;
+    @include breakpoint(medium){
+        padding: 0 5% $padding 5%;
     }
 }
