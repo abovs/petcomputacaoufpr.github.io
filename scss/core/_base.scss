@@ -3,7 +3,7 @@
 body{
     @extend .color-dark;
     font-family: 'Open Sans', sans-serif;
-    background: white;
+    background: $light;
     margin: 0;
     min-height: 100%;
     position: relative;

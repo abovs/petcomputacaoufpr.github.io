@@ -2,7 +2,7 @@
 //Core é a base do kit css
 
 //--------------------------Variáveis-------------------------------------------
-$light: whitesmoke;
+$light: #FAFAFA;
 $stable: #DCD6D8;
 $positive: #55CB7C; //#349B89;
 $calm: #99CDC4;
@@ -19,3 +19,4 @@ $red: #9b2929; //Cor retirada do antigo site
 @import "alerts";
 @import "tooltips";
 @import "navigation";
+@import "cards";
