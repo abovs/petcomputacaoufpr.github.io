@@ -1,9 +1,10 @@
 .button, button{
-    @extend .stable;
+    @extend .bg-stable;
+    @extend %box-size;
 	border: none;
-	padding: 10px 14px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	padding: $padding/2;
+	margin-top: $margin/2;
+	margin-bottom: $margin/2;
 	border-radius: 2px;
 	font-weight: 100;
 	text-decoration: none;
@@ -11,6 +12,7 @@
 	&:hover{
 		cursor: pointer;
 		background-color: lighten($stable, 5%);
+    	text-decoration: none;
 	}
 	&:active{
         background-color: darken($stable, 10%);
@@ -23,13 +25,10 @@
 .button-positive{
     @extend .button;
     @extend .positive;
-    color: white;
     &:hover{
-        color: white;
 		background-color: lighten($positive, 10%);
 	}
 	&:active{
-        color: white;
         background-color: darken($positive, 10%);
     }
 }
@@ -92,8 +91,8 @@
 
 .button-facebook{
     @extend .button;
+    @extend .color-light;
     background-color: #344e86;
-    color: white;
     &:hover{
 		background-color: white;
 		color: #344e86;
@@ -107,12 +106,13 @@
 .button-small{
     font-size: 80%;
     font-weight: lighter;
-    padding: 5px;
+    padding: $padding/4;
 }
 
 .button-large{
     font-size: 110%;
-    padding: 20px 28px;
+    font-weight: bold;
+    padding: $padding;
 }
 
 .button-clean{
