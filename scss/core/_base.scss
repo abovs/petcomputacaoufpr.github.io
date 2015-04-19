@@ -1,5 +1,9 @@
 //Este partial contém regras para tags HTML
 
+html, body{
+    height: 100%;
+}
+
 body{
     @extend .color-dark;
     font-family: 'Open Sans', sans-serif;

@@ -1,0 +1,13 @@
+//-----------------------------Sticky footer------------------------------------
+.page-wrap{
+    min-height: 100%;
+    margin-bottom: $sticky-footer-height;
+    &:after{
+        content: "";
+        display: block;
+    }
+}
+
+.sticky, .page-wrap:after{
+    height: $sticky-footer-height;
+}

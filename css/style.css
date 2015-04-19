@@ -431,6 +431,9 @@
 .all-caps, .navbar .brand, .navbar-positive .brand, .navbar-calm .brand, .navbar-energized .brand, .navbar-dark .brand, .logo {
   text-transform: uppercase; }
 
+html, body {
+  height: 100%; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   background: #FAFAFA;
@@ -923,6 +926,16 @@ select {
   border-radius: 3px; }
   .card > .card {
     box-shadow: 0 2px 5px #aaa; }
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: 4em; }
+  .page-wrap:after {
+    content: "";
+    display: block; }
+
+.sticky, .page-wrap:after {
+  height: 4em; }
 
 .post .post-image {
   max-width: 100%; }
