@@ -1,0 +1,211 @@
+.row{
+    @extend %clearfix;
+    & + &{
+        margin-top: $row-spacing;
+    }
+}
+
+[class^="col-"]{
+    @extend %box-size;
+    float: left;
+    margin-right: $col-spacing;
+    
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+//------------------------Colunas normais---------------------------------------
+
+.col-1-12     { width:(100% / 12) - ($col-spacing * 11 / 12); }
+
+.col-2-12,
+.col-1-6      { width:(100% / 6) - ($col-spacing * 10 / 12); } 
+
+.col-3-12,
+.col-1-4      { width:(100% / 4) - ($col-spacing * 9 / 12); }
+
+.col-4-12,
+.col-2-6,
+.col-1-3      { width:(100% / 3) - ($col-spacing * 8 / 12); }
+
+.col-5-12     { width:(100% / 2.4) - ($col-spacing * 7 / 12); }
+
+.col-6-12,
+.col-3-6,
+.col-1-2      { width:(100% / 2) - ($col-spacing * 6 / 12); }
+
+.col-7-12     { width:(100% / 1.714285714285714) - ($col-spacing * 5 / 12); }
+
+.col-8-12,
+.col-4-6,
+.col-2-3      { width:(100% / 1.5) - ($col-spacing * 4 / 12); }
+
+.col-9-12,
+.col-3-4      { width:(100% / 1.333333333333333) - ($col-spacing * 3 / 12); }
+
+.col-10-12,
+.col-5-6      { width:(100% / 1.2) - ($col-spacing * 2 / 12); }
+
+.col-11-12    { width:(100% / 1.090909090909091) - ($col-spacing * 1 / 12); }
+
+.col-12-12,
+.col-6-6,
+.col-3-3,
+.col-1-1      { width:100%; }
+
+
+//------------------------Colunas responsivas-----------------------------------
+
+//xLarge
+.col-xl-1-12     { @include breakpoint(xlarge){ width:(100% / 12) - ($col-spacing * 11 / 12); } }
+
+.col-xl-2-12,
+.col-xl-1-6      { @include breakpoint(xlarge){ width:(100% / 6) - ($col-spacing * 10 / 12); }  }
+
+.col-xl-3-12,
+.col-xl-1-4      { @include breakpoint(xlarge){ width:(100% / 4) - ($col-spacing * 9 / 12); } }
+
+.col-xl-4-12,
+.col-xl-2-6,
+.col-xl-1-3      { @include breakpoint(xlarge){ width:(100% / 3) - ($col-spacing * 8 / 12); } }
+
+.col-xl-5-12     { @include breakpoint(xlarge){ width:(100% / 2.4) - ($col-spacing * 7 / 12); } }
+
+.col-xl-6-12,
+.col-xl-3-6,
+.col-xl-1-2      { @include breakpoint(xlarge){ width:(100% / 2) - ($col-spacing * 6 / 12); } }
+
+.col-xl-7-12     { @include breakpoint(xlarge){ width:(100% / 1.714285714285714) - ($col-spacing * 5 / 12); } }
+
+.col-xl-8-12,
+.col-xl-4-6
+.col-xl-2-3      { @include breakpoint(xlarge){ width:(100% / 1.5) - ($col-spacing * 4 / 12); } }
+
+.col-xl-9-12,
+.col-xl-3-4      { @include breakpoint(xlarge){ width:(100% / 1.333333333333333) - ($col-spacing * 3 / 12); } }
+
+.col-xl-10-12,
+.col-xl-5-6      { @include breakpoint(xlarge){ width:(100% / 1.2) - ($col-spacing * 2 / 12); } }
+
+.col-xl-11-12    { @include breakpoint(xlarge){ width:(100% / 1.090909090909091) - ($col-spacing * 1 / 12); } }
+
+.col-xl-12-12,
+.col-xl-6-6,
+.col-xl-3-3,
+.col-xl-1-1      { @include breakpoint(xlarge){ width:100%; } }
+
+
+//Large
+.col-lg-1-12     { @include breakpoint(large){ width:(100% / 12) - ($col-spacing * 11 / 12); } }
+
+.col-lg-2-12,
+.col-lg-1-6      { @include breakpoint(large){ width:(100% / 6) - ($col-spacing * 10 / 12); }  }
+
+.col-lg-3-12,
+.col-lg-1-4      { @include breakpoint(large){ width:(100% / 4) - ($col-spacing * 9 / 12); } }
+
+.col-lg-4-12,
+.col-lg-2-6,
+.col-lg-1-3      { @include breakpoint(large){ width:(100% / 3) - ($col-spacing * 8 / 12); } }
+
+.col-lg-5-12     { @include breakpoint(large){ width:(100% / 2.4) - ($col-spacing * 7 / 12); } }
+
+.col-lg-6-12,
+.col-lg-3-6,
+.col-lg-1-2      { @include breakpoint(large){ width:(100% / 2) - ($col-spacing * 6 / 12); } }
+
+.col-lg-7-12     { @include breakpoint(large){ width:(100% / 1.714285714285714) - ($col-spacing * 5 / 12); } }
+
+.col-lg-8-12,
+.col-lg-4-6
+.col-lg-2-3      { @include breakpoint(large){ width:(100% / 1.5) - ($col-spacing * 4 / 12); } }
+
+.col-lg-9-12,
+.col-lg-3-4      { @include breakpoint(large){ width:(100% / 1.333333333333333) - ($col-spacing * 3 / 12); } }
+
+.col-lg-10-12,
+.col-lg-5-6      { @include breakpoint(large){ width:(100% / 1.2) - ($col-spacing * 2 / 12); } }
+
+.col-lg-11-12    { @include breakpoint(large){ width:(100% / 1.090909090909091) - ($col-spacing * 1 / 12); } }
+
+.col-lg-12-12,
+.col-lg-6-6,
+.col-lg-3-3,
+.col-lg-1-1      { @include breakpoint(large){ width:100%; } }
+
+//Medium
+.col-md-1-12     { @include breakpoint(medium){ width:(100% / 12) - ($col-spacing * 11 / 12); } }
+
+.col-md-2-12,
+.col-md-1-6      { @include breakpoint(medium){ width:(100% / 6) - ($col-spacing * 10 / 12); }  }
+
+.col-md-3-12,
+.col-md-1-4      { @include breakpoint(medium){ width:(100% / 4) - ($col-spacing * 9 / 12); } }
+
+.col-md-4-12,
+.col-md-2-6,
+.col-md-1-3      { @include breakpoint(medium){ width:(100% / 3) - ($col-spacing * 8 / 12); } }
+
+.col-md-5-12     { @include breakpoint(medium){ width:(100% / 2.4) - ($col-spacing * 7 / 12); } }
+
+.col-md-6-12,
+.col-md-3-6,
+.col-md-1-2      { @include breakpoint(medium){ width:(100% / 2) - ($col-spacing * 6 / 12); } }
+
+.col-md-7-12     { @include breakpoint(medium){ width:(100% / 1.714285714285714) - ($col-spacing * 5 / 12); } }
+
+.col-md-8-12,
+.col-md-4-6
+.col-md-2-3      { @include breakpoint(medium){ width:(100% / 1.5) - ($col-spacing * 4 / 12); } }
+
+.col-md-9-12,
+.col-md-3-4      { @include breakpoint(medium){ width:(100% / 1.333333333333333) - ($col-spacing * 3 / 12); } }
+
+.col-md-10-12,
+.col-md-5-6      { @include breakpoint(medium){ width:(100% / 1.2) - ($col-spacing * 2 / 12); } }
+
+.col-md-11-12    { @include breakpoint(medium){ width:(100% / 1.090909090909091) - ($col-spacing * 1 / 12); } }
+
+.col-md-12-12,
+.col-md-6-6,
+.col-md-3-3,
+.col-md-1-1      { @include breakpoint(medium){ width:100%; } }
+
+//Small
+.col-sm-1-12     { @include breakpoint(small){ width:(100% / 12) - ($col-spacing * 11 / 12); } }
+
+.col-sm-2-12,
+.col-sm-1-6      { @include breakpoint(small){ width:(100% / 6) - ($col-spacing * 10 / 12); }  }
+
+.col-sm-3-12,
+.col-sm-1-4      { @include breakpoint(small){ width:(100% / 4) - ($col-spacing * 9 / 12); } }
+
+.col-sm-4-12,
+.col-sm-2-6,
+.col-sm-1-3      { @include breakpoint(small){ width:(100% / 3) - ($col-spacing * 8 / 12); } }
+
+.col-sm-5-12     { @include breakpoint(small){ width:(100% / 2.4) - ($col-spacing * 7 / 12); } }
+
+.col-sm-6-12,
+.col-sm-3-6,
+.col-sm-1-2      { @include breakpoint(small){ width:(100% / 2) - ($col-spacing * 6 / 12); } }
+
+.col-sm-7-12     { @include breakpoint(small){ width:(100% / 1.714285714285714) - ($col-spacing * 5 / 12); } }
+
+.col-sm-8-12,
+.col-sm-4-6
+.col-sm-2-3      { @include breakpoint(small){ width:(100% / 1.5) - ($col-spacing * 4 / 12); } }
+
+.col-sm-9-12,
+.col-sm-3-4      { @include breakpoint(small){ width:(100% / 1.333333333333333) - ($col-spacing * 3 / 12); } }
+
+.col-sm-10-12,
+.col-sm-5-6      { @include breakpoint(small){ width:(100% / 1.2) - ($col-spacing * 2 / 12); } }
+
+.col-sm-11-12    { @include breakpoint(small){ width:(100% / 1.090909090909091) - ($col-spacing * 1 / 12); } }
+
+.col-sm-12-12,
+.col-sm-6-6,
+.col-sm-3-3,
+.col-sm-1-1      { @include breakpoint(small){ width:100%; } }

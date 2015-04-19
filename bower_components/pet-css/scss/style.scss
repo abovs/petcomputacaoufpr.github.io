@@ -1,0 +1,43 @@
+//-----------------------Fonts--------------------------------------------------
+@import url(//fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
+//FontAwesome
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+//----------------------Imports-------------------------------------------------
+//Utils são ferramentas e facilidades, como posicionamento, grid e mixins
+@import "utils/utils";
+
+//Core é a base do css: cores, tags html, reset e todos os componentes básicos
+// do kit css
+@import "core/core";
+
+//Widgets são módulos feitos sobre os itens definidos no core, como forms de login
+// publicação de artigo, slider, showcase, etc.
+@import "widgets/widgets";
+@import "widgets/blog";
+
+.section{
+    padding-bottom: 20px;
+    border-bottom: 1px solid $stable;
+    margin-bottom: 20px;
+}
+
+.logo{
+    @extend .all-caps;
+    color: $red;
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-size: 4.5em;
+}
+
+.content{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 3*$padding;
+    @include breakpoint(medium){
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: $padding;
+    }
+}

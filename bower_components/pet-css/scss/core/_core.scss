@@ -1,0 +1,25 @@
+//--------------------------CORE-----------------------------------------------
+//Core é a base do kit css
+
+//--------------------------Variáveis-------------------------------------------
+$light: #FAFAFA;
+$stable: #DCD6D8;
+$positive: #55CB7C; //#349B89;
+$calm: #99CDC4;
+$energized: #EC7149;
+$dark: #1D1C22; //#2F3439;
+$red: #9b2929; //Cor retirada do antigo site
+
+$sticky-footer-height: 4em;
+
+//--------------------------Imports---------------------------------------------
+@import "colors";
+@import "text";
+@import "base";
+@import "forms";
+@import "buttons";
+@import "alerts";
+@import "tooltips";
+@import "navigation";
+@import "cards";
+@import "footer";
