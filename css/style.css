@@ -327,6 +327,9 @@
 .margin {
   margin: 1rem; }
 
+.margin-2x {
+  margin: 2rem; }
+
 .no-margin, .navbar .brand, .navbar-positive .brand, .navbar-calm .brand, .navbar-energized .brand, .navbar-dark .brand {
   margin: 0; }
 
@@ -334,12 +337,23 @@
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
+.margin-vertical-2x {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
 .margin-horizontal {
   margin-right: 1rem;
   margin-left: 1rem; }
 
+.margin-horizontal-2x {
+  margin-right: 2rem;
+  margin-left: 2rem; }
+
 .padding {
   padding: 1.5rem; }
+
+.padding-2x {
+  padding: 3rem; }
 
 .no-padding {
   padding: 0; }
@@ -348,9 +362,17 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
 
+.padding-vertical-2x {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
 .padding-horizontal {
   padding-left: 1.5rem;
   padding-right: 1.5rem; }
+
+.padding-horizontal-2x {
+  padding-left: 3rem;
+  padding-right: 3rem; }
 
 .center-vertical {
   margin: auto 0 auto 0; }

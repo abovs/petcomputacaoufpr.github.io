@@ -10,6 +10,10 @@
     margin: $margin;   
 }
 
+.margin-2x{
+    margin: $margin*2;
+}
+
 .no-margin{
     margin: 0;
 }
@@ -19,13 +23,27 @@
     margin-bottom: $margin;
 }
 
+.margin-vertical-2x{
+    margin-top: $margin*2;
+    margin-bottom: $margin*2;
+}
+
 .margin-horizontal{
     margin-right: $margin;
     margin-left: $margin;
 }
 
+.margin-horizontal-2x{
+    margin-right: $margin*2;
+    margin-left: $margin*2;
+}
+
 .padding{
     padding: $padding;
+}
+
+.padding-2x{
+    padding: $padding*2;
 }
 
 .no-padding{
@@ -37,9 +55,19 @@
     padding-bottom: $padding;
 }
 
+.padding-vertical-2x{
+    padding-top: $padding*2;
+    padding-bottom: $padding*2;
+}
+
 .padding-horizontal{
     padding-left: $padding;
     padding-right: $padding;
+}
+
+.padding-horizontal-2x{
+    padding-left: $padding*2;
+    padding-right: $padding*2;
 }
 
 .center-vertical{
