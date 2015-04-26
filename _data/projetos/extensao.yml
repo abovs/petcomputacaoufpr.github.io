@@ -1,8 +1,8 @@
 - name: Curso de Informática para Imigrantes
-  link: curso.html
+  link: projetos/curso.html
 
 - name: InterPET nas Escolas
-  link: projeto.html
+  link: projetos/projeto.html
 
 - name: Oficina de Vestibulandos
-  link: projeto.html
+  link: projetos/projeto.html
