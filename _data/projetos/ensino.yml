@@ -1,0 +1,17 @@
+- name: A.D.E.G.A.
+  link: projetos/projeto.html
+
+- name: Curso de GIT
+  link: projetos/curso.html
+
+- name: Curso de LaTEeX
+  link: projetos/curso.html
+
+- name: Curso de Linux
+  link: projetos/curso.html
+
+- name: Curso de ShellScript
+  link: projetos/curso.html
+
+- name: Seminários
+  link: ''
