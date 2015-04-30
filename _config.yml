@@ -5,8 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Biblioteca CSS feita pelo PET Computação UFPR para ser utilizada em projetos web
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pet.inf.ufpr.br" # the base hostname & protocol for your site
-twitter_username: vytorcalixto
-github_username:  vytorcalixto
+github_username:  PETComputacaoUFPR
 
 # Paginação
 paginate: 5
