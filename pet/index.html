@@ -33,14 +33,14 @@ title: PET Computação UFPR
         <div class="col-3-4 padding-horizontal">
             <h1 class="post-title no-margin">{{ post.title }}</h1>
             <span class="post-time">
-                <a href="{{ post.url }}">
+                <a href="{{ post.url | prepend: '/site-pet/' }}">
                     <i class="fa fa-calendar"></i> {{ post.date | date: "%D" }}
                 </a>
             </span>
             <div class="post-content">
                 <p>
                     {{ post.content | strip_html | truncatewords:75 }}
-                    <a href="{{ post.url }}">Leia mais...</a>
+                    <a href="{{ post.url | prepend: '/site-pet/' }}">Leia mais...</a>
                 </p>
             </div>
         </div>
