@@ -16,7 +16,7 @@ header: true
                 <ul class="margin-horizontal">
                     
                     {% for pesquisa in site.data.projetos.pesquisa %}
-                    <li><a href="{{ pesquisa.link | prepend: site.baseurl}}">{{ pesquisa.name }}</a></li>
+                    <li><a href="{{ pesquisa.link | prepend: site.baseurl }}">{{ pesquisa.name }}</a></li>
                     {% endfor %}
                     
                 </ul>
@@ -25,7 +25,7 @@ header: true
                 <h2>Ensino:</h2>
                 <ul>
                     {% for ensino in site.data.projetos.ensino %}
-                    <li><a href="{{ ensino.link | prepend: site.baseurl}}">{{ ensino.name }}</a></li>
+                    <li><a href="{{ ensino.link | prepend: site.baseurl }}">{{ ensino.name }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -33,7 +33,7 @@ header: true
                 <h2>Extensão:</h2>
                 <ul>
                     {% for extensao in site.data.projetos.extensao %}
-                    <li><a href="{{ extensao.link | prepend: site.baseurl}}">{{ extensao.name }}</a></li>
+                    <li><a href="{{ extensao.link | prepend: site.baseurl }}">{{ extensao.name }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
