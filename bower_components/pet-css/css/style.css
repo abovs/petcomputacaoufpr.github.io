@@ -959,6 +959,10 @@ select {
 .sticky, .page-wrap:after {
   height: 4em; }
 
+.tag {
+  background-color: #99CDC4;
+  border-radius: 3px; }
+
 .post .post-image {
   max-width: 100%; }
 .post .post-title {

@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Novo site!"
+date:   2015-04-20 17:55:34
+image:  http://placehold.it/400x400/efefef
+tags:
+  - novidades
+  - web
+---
+O PET migrou seu site para o Jekyll. Várias coisas interessantes ocorreram neste período.
