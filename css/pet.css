@@ -1,0 +1,27 @@
+/*Essa stylesheet contém elementos específicos ao site e que não estão no pet-css*/
+.header {
+    color: white;
+}
+.logo {
+    color: inherit;
+}
+.header a {
+    color: inherit;
+}
+.membro {
+    box-sizing: border-box;
+    border-radius: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.membro .nome {
+    display: block;
+}
+.membro .curso {
+    text-transform: uppercase;
+    font-weight: 100;
+    display: block;
+}
+.membro a {
+    display: block;
+}

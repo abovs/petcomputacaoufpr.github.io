@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Novo site!"
+title:  Novo site!
+chamada: O PET migrou seu site para o Jekyll. Confira tudo o que mudou.
 date:   2015-04-20 17:55:34
-image:  http://placehold.it/400x400/efefef
+image:  http://www.chrispenner.ca/images/jekyll-logo.png
 tags:
   - novidades
   - web
 ---
-O PET migrou seu site para o Jekyll. Várias coisas interessantes ocorreram neste período.
+Você já deve ter reparado que o site do PET mudou. Mas por que isso aconteceu?
