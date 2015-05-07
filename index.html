@@ -38,7 +38,7 @@ title: PET Computação UFPR
             <h1 class="post-title no-margin">{{ post.title }}</h1>
             <span class="post-time">
                 <a href="{{ post.url }}">
-                    <i class="fa fa-calendar"></i> {{ post.date | date: "%D" }}
+                    <i class="fa fa-calendar"></i> {{ post.date | date: "%d/%m/%y" }}
                 </a>
             </span>
             <div class="post-content">
@@ -63,4 +63,18 @@ title: PET Computação UFPR
         </div>
     </article>
     {% endfor %}
+    
+    <div class="text-right">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="button-dark button-small">
+            <i class="fa fa-chevron-left"></i> Anterior
+        </a>
+      {% endif %}
+      <span class="page_number ">{{ paginator.page }} de {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="button-dark button-small">
+            Próxima <i class="fa fa-chevron-right"></i>
+        </a>
+      {% endif %}
+    </div>
 </section>

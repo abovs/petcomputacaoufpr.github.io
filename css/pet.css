@@ -25,3 +25,11 @@
 .membro a {
     display: block;
 }
+
+.tag:after {
+    content: "|";
+}
+
+.tag:last-child:after {
+    content: "";
+}
