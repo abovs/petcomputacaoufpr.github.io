@@ -44,9 +44,9 @@ title: PET Computação UFPR
             <div class="post-content">
                 <p>
                     {% if post.chamada == "" or post.chamada == nil %}
-                        {{ post.content | strip_html | truncatewords:75 }}
+                        {{ post.excerpt | strip_html | truncatewords:75 }}
                     {% else %}
-                        {{ post.chamada | strip_html | truncatewords: 75 }}
+                        {{ post.chamada }}
                     {% endif %}
                     <br/>
                     <a href="{{ post.url }}">Leia mais...</a>

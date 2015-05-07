@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Novo site!
-chamada: O PET migrou seu site para o Jekyll. Confira tudo o que mudou.
+#chamada: O PET migrou seu site para o Jekyll. Confira tudo o que mudou.
 date:   2015-04-20 17:55:34
 image:  http://www.chrispenner.ca/images/jekyll-logo.png
 tags:
