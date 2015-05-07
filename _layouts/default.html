@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="content page-wrap section">
-        {{ content }}
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+    
+    {% include head.html %}
+    <style>
+    
+    </style>
+    <body>
+        {% include nav.html %}
+        <div class="page-wrap">
+            {% if page.header %}
+            <header class="header dark padding-vertical">
+                <div class="center-block text-center">
+                    <h1 class="logo">{{ page.title }}</h1>
+                </div>
+            </header>
+            {% endif %}
+            
+            {{ content }}
+        </div>
+        {% include footer-pet.html %}
+    </body>
 </html>
