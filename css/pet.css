@@ -33,3 +33,7 @@
 .tag:last-child:after {
     content: "";
 }
+
+ul{
+    margin: 40px;
+}
