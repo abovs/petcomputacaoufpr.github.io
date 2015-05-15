@@ -3,6 +3,7 @@ layout: post
 title:  Processo Seletivo 2015
 chamada: As inscrições para o processo seletivo estão abertas. Veja mais informações.
 date:   2015-03-16 17:55:34
+featured: true
 tags:
   - processo seletivo
   - pet
