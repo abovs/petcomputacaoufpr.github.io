@@ -2,6 +2,7 @@
 layout: post
 title:  Curso de LaTeX
 date:   2014-10-20 11:24:25
+featured: true
 tags:
   - curso
   - latex

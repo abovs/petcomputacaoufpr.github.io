@@ -4,9 +4,6 @@ title: PET Computação UFPR
 ---
 <div class="row">
     <section>
-        <h2 class="left-text">
-                <i class="fa fa-newspaper-o"></i> Destaques
-        </h2>
         <div id="featured">
             {% assign count = 0 %}
             {% for post in site.posts %}
@@ -20,32 +17,43 @@ title: PET Computação UFPR
                             {% else %}
                             <div class="col-1-1">
                             {% endif %}
-                                <h3 style="display: inline-block">
+                                <h3>
                                     <a href="{{ post.url }}">{{post.title}}</a>
                                 </h3>
                                 <p>
                                     {% if post.chamada == "" or post.chamada == nil %}
-                                    {{ post.excerpt | strip_html | truncatewords:75 }}
+                                        {{ post.excerpt | strip_html | truncatewords:75 }}
                                     {% else %}
                                         {{ post.chamada }}
                                     {% endif %}
                                 </p>
                             </div>
                     </div>
-                    {% elsif count <= 3 %}
-                    <div class="row">
-                        {% if post.image != "" and post.image != nil %}
-                        <img src={{post.image}} class="col-1-4">
-                        <h3 style="display: inline-block" class="col-3-4">
-                        {% else %}
-                        <h3 style="display: inline-block" class="col-4-4">
-                        {% endif %}
-                            <a href="{{ post.url }}">{{post.title}}</a>
-                        </h3>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            <div class="row" style="display: flex; align-itens: stretch;">
+            {% assign count = 0 %}
+            {% for post in site.posts %}
+                {% if post.featured == true %}
+                    {% assign count = count | plus: 1 %}
+                    {% if count > 1 and count <=4 %}
+                    <div class="col-1-3">
+                        <div class="padding-horizontal">
+                        <h4><a href="{{post.url}}">{{post.title}}</a></h4>
+                        <p>
+                            {% if post.chamada == "" or post.chamada == nil %}
+                                {{ post.excerpt | strip_html | truncatewords:10 }}
+                            {% else %}
+                                {{ post.chamada | truncatewords:10 }}
+                            {% endif %}
+                        </p>
+                        </div>
                     </div>
                     {% endif %}
                 {% endif %}
             {% endfor %}
+            </div>
         </div>
     </section>
 </div>
@@ -53,7 +61,7 @@ title: PET Computação UFPR
 <div class="row">
     <div class="col-2-3 col-md-1-1">
         <section class="post-list">
-            <h2>Notícias mais recentes</h2>
+            <h2><i class="fa fa-newspaper-o"></i> Notícias mais recentes</h2>
             
             {% for post in paginator.posts %}
             <article class="post section row">

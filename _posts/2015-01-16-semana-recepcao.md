@@ -3,6 +3,7 @@ layout: post
 title:  Semana de Recepção dos Calouros 2015
 chamada: A semana ocorre do dia 23 à 27 de fevereiro. Saiba mais!
 date:   2015-01-16 17:55:34
+featured: true
 tags:
   - semana de recepção
   - ufpr
