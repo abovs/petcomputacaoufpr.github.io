@@ -6,7 +6,7 @@ header: true
 # Quem somos?
 O PET Computação consiste em um grupo de graduandos em Ciência da Computação e Informática Biomédica interessados em ampliar o conhecimento além do que é oferecido pelos cursos oferecidos pelo Departamento de Informática. O Programa oferece condições para a realização de atividades extracurriculares. Sob a orientação de um tutor, os membros do PET se mobilizam em diversos projetos que englobam diversas áreas do curso de Ciência da Computação e do curso de Informática Biomédica, com o objetivo de gerar pessoas não apenas com uma vasta gama de conhecimentos, como estimular o pensamento crítico e o desenvolvimento de habilidades para resolução de problemas, preparando tanto para o mercado profissional como para o desenvolvimento acadêmico.
 
-Aos membros do PET é oferecida uma bolsa de R$400.00 (quatrocentos reais), uma forma de estímulo e auxílio para que possam se dedicar aos projetos do PET. A carga horária é de 20 (vinte) horas semanais, sendo 12 (doze) presenciais.
+Aos membros do PET é oferecida uma bolsa de R$400.00 (quatrocentos reais), uma forma de estímulo e auxílio para que possam se dedicar aos projetos do PET. A carga horária é de 20 (vinte) horas semanais.
 
 Como membros do PET Computação, acreditamos em auxiliar os alunos em sua gradução e sua formação global, tanto de nós, bolsistas, quanto de nossos colegas do curso. Acreditamos na importância da participação ativa do PET na parte administativa do curso, protegendo os interesses da classe estudantil. E, por fim, acreditamos na importância de nos manter verdadeiros aos objetivos do Programa de Educação Tutorial nas sua formação de alunos capazes e interessados em expandir seu conhecimento pessoal com iniciativa.
 
