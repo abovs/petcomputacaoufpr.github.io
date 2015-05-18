@@ -3,25 +3,31 @@
     color: white;
 }
 .logo {
-    color: inherit;
+    color: white;
+    font-weight: 400;
 }
+
 .header a {
     color: inherit;
 }
+
 .membro {
     box-sizing: border-box;
     border-radius: 0px;
     text-align: center;
     margin-bottom: 15px;
 }
+
 .membro .nome {
     display: block;
 }
+
 .membro .curso {
     text-transform: uppercase;
     font-weight: 100;
     display: block;
 }
+
 .membro a {
     display: block;
 }
@@ -36,4 +42,8 @@
 
 ul{
     margin: 40px;
+}
+
+.brand{
+    font-weight: 300 !important;
 }

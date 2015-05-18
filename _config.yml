@@ -3,8 +3,8 @@ title: PET Computação UFPR
 email: pet@inf.ufpr.br
 description: > # this means to ignore newlines until "baseurl:"
   Site do PET Computação feito em Jekyll
-baseurl: "/pet/" # the subpath of your site, e.g. /blog/
 #alterar ao fazer deploy
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://site-pet-vytorcalixto.c9.io/" # the base hostname & protocol for your site
 github_username:  PETComputacaoUFPR
 
