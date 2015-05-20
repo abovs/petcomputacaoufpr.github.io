@@ -1,0 +1,34 @@
+-   url: "http://www.example.com"
+    name: Farol
+    active: true
+    priority: 1
+
+
+-   url: "http://www.example.com"
+    name: "Oficina de Vestibulandos"
+    active: true
+    priority: 4
+
+
+-   url: "http://www.example.com"
+    name: "Processo Seletivo"
+    active: false
+    priority: 3
+
+
+-   url: "http://www.example.com"
+    name: "Semana dos calouros"
+    active: false
+    priority: 2
+
+
+-   url: "http://www.example.com"
+    name: "Feira de profissões"
+    active: true
+    priority: 5
+
+
+-   name: "Materiais e apostilas"
+    url: "http://www.example.com"
+    active: true
+    priority: 100
