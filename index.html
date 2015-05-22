@@ -34,10 +34,15 @@ title: PET Computação UFPR
                 {% endif %}
             {% endfor %}
                 <section class="col-1-4 col-md-1-1" id="destaques">
-					{% for link in site.data.links | sort: 'priority' %}
+					{% assign links = site.data.links | sort: 'priority' %}
+					{% for link in links %}
 					{% if link.active %}
 					<a href="{{ link.url }}">
-						<img>
+						{% if link.icon %}
+						<i class="icon {{ link.icon }}"></i>
+						{% else %}
+						<img class="icon">
+						{% endif %}
 						{{ link.name }}
 					</a>
 					{% endif %}
