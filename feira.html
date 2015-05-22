@@ -2,7 +2,55 @@
 layout: pet
 title: PET Computação UFPR
 ano: 2015
+
+data_palestra:
+
+inicio_feira: 
+final_feira: 
+
+
+atividades_bcc:
+
+
+atividades_ibm:
 ---
 
-<h1>Feira de cursos e profissões {{ ano }}</h1>
+<h1>Informações para os alunos participantes da feira de cursos e profissões {{ page.ano }}</h1>
 
+
+<p>A participação na palestra de apresentação das atividades é 
+OBRIGATÓRIA para todos os alunos que pretendem participar na 
+feira de profissões.
+</p>
+
+
+<h2>Datas</h2>
+
+<table>
+	<tr>
+		<td>Palestra de apresentação</td>
+		<td>{% if page.data_palestra %}{{ page.data_palestra }}{% else %}ainda não decidida{% endif %}</td>
+	</tr>
+	<tr>
+		<td>Feira</td>
+		<td>{% if page.inicio_feira %}{{ page.inicio_feira }} a {{ page.final_feira }}{% endif %}</td>
+	</tr>
+</table>
+
+
+<h2>Atividades</h2>
+
+<h3>Ciência da Computação</h3>
+<ul>
+	{% for ativ in page.atividades_bcc %}
+	<li>{{ ativ.nome }}{% if ativ.link %}<a href="{{ ativ.link }}">ver</a>{% endif %}</li>
+	{% endfor %}
+</ul>
+
+
+<h3>Informática Biomédica</h3>
+<ul>
+	{% for ativ in page.atividades_ibm %}
+	<li>{{ ativ.nome }}{% if ativ.link %}<a href="{{ ativ.link }}">ver</a>{% endif %}</li>
+	{% endfor %}
+</ul>
