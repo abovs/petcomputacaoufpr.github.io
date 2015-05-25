@@ -1,9 +1,9 @@
-@import url(//fonts.googleapis.com/css?family=Lato:100,300,400);
+/*@import url(//fonts.googleapis.com/css?family=Lato:100,300,400);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 * {
   box-sizing: border-box; }
-
+*/
 /*Mixin para breakpoints
 * Uso:
 * @include breakpoint(xlarge){width: 100%}

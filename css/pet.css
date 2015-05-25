@@ -47,3 +47,11 @@ ul{
 .brand{
     font-weight: 300 !important;
 }
+.anchor {
+   color: inherit;  
+    
+}
+.anchor:hover{
+    color: inherit;
+    text-decoration: inherit;
+}
