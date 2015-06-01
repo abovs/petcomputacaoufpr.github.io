@@ -18,9 +18,9 @@ e levar seus membros para o sucesso, além de fazer inúmeras contribuições pa
 ciência e gerar uma tonelada de conhecimentos.
 
 # Equipe
-* Asd
-* Wasd
-* **Daws**
+* Gabriel
+* Bruno
+* **Daniel**
 
 # Arquivos e downloads
 * Código fonte disponível no [GitLab](https://gitlab.c3sl.ufpr.br/pet/).

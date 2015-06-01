@@ -18,9 +18,8 @@ e levar seus membros para o sucesso, além de fazer inúmeras contribuições pa
 ciência e gerar uma tonelada de conhecimentos.
 
 # Equipe
-* Asd
-* Wasd
-* **Daws**
+* **Davisson Paulino**
+* Vytor Calixto
 
 # Arquivos e downloads
-* Código fonte disponível no [GitLab](https://gitlab.c3sl.ufpr.br/pet/).
+* Wiki com breve treinamento em Git disponível no [GitLab](https://gitlab.c3sl.ufpr.br/pet/treinamentoGit/wikis/home).

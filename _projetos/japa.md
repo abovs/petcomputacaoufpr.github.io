@@ -18,9 +18,13 @@ e levar seus membros para o sucesso, além de fazer inúmeras contribuições pa
 ciência e gerar uma tonelada de conhecimentos.
 
 # Equipe
-* Asd
-* Wasd
-* **Daws**
+* Ana
+* Ivo
+* Jedian
+* André Felipe
+* Julia
+* Mayara
+
 
 # Arquivos e downloads
 * Código fonte disponível no [GitLab](https://gitlab.c3sl.ufpr.br/pet/).
