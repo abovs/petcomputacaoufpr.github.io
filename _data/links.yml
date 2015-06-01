@@ -1,0 +1,49 @@
+-   url: "http://www.example.com"
+    name: Farol
+    active: true
+    priority: 1
+
+
+-   url: "http://www.example.com"
+    name: "Oficina de Vestibulandos"
+    icon: "fa fa-code"
+    active: true
+    priority: 3
+
+
+-   name: "Processo Seletivo"
+    url: "http://www.example.com"
+    active: false
+    priority: 3
+
+
+-   url: "http://www.example.com"
+    name: "Semana dos calouros"
+    active: false
+    priority: 2
+
+
+-   url: "http://www.example.com"
+    name: "Feira de profissões"
+    active: true
+    priority: 2
+
+
+-   name: "Materiais e apostilas"
+    url: "http://www.example.com"
+    icon: "fa fa-download"
+    active: true
+    priority: 100
+
+
+-   name: "Grupos de estudos"
+    url: "projetos/grupos.html"
+    active: true
+    icon: "fa fa-calendar"
+    priority: 4
+    
+-   name: "A.D.E.G.A."
+    url: "projetos/adega.html"
+    active: false
+    icon: "fa fa-bar-chart"
+    priority: 8
